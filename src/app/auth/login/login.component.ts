@@ -1,0 +1,23 @@
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
+
+@Component({
+  selector: 'app-login',
+  standalone: true,
+  imports: [NavbarComponent],
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.css'
+})
+export class LoginComponent {
+  constructor(private router: Router) {}
+
+  navegarParaCadastro() {
+    console.log("Tentando navegar para a tela de cadastro...");
+    this.router.navigate(['/sign-up']).then(success => {
+      console.log("Navegação bem-sucedida?", success);
+    }).catch(error => {
+      console.error("Erro na navegação:", error);
+    });
+  }
+}

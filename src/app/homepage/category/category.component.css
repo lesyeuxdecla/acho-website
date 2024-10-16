@@ -1,0 +1,72 @@
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 70px;
+    color: #E15C31;
+}
+
+.categorias-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 75px;
+  margin-bottom: 5px;
+  margin-left: 0px; /* Certifica que o título e a seta ficam alinhados à esquerda */
+}
+
+button.seta-direita {
+  background: none; /* Remove o fundo */
+  border: none;
+  color: #E15C31;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px; /* Ajusta a seta para não ficar colada no final */
+}
+
+button.seta-direita .material-icons {
+  font-size: 32px;
+}
+
+.categorias-container {
+    margin-left: 40px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 5px; /* Espaçamento de 20px entre os itens */
+  }
+  
+  .categoria {
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .icone-categoria {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #E15C31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icone-categoria .material-icons {
+    font-size: 48px;
+    color: white;
+  }
+  
+  p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #E15C31;
+  }
+  

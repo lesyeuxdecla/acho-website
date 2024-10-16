@@ -1,0 +1,12 @@
+section {
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 1px;
+
+}
+
+img {
+    width: 100%; /* Ocupa 100% da largura da coluna */
+    height: auto;
+    margin-bottom: 10px;
+}
