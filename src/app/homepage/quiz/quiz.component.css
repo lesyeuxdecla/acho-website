@@ -1,0 +1,46 @@
+section {
+    padding-left: 70px;
+    padding-right: 100px;
+    padding-top: 5px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.texto {
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    right: 50%;
+    color: #043B64;
+    text-align: left;
+    font-size: 66px;
+    font-weight: 500;
+    line-height: 1.5; 
+    padding: 10px 15px; 
+    width: fit-content;
+    border-radius: 8px;
+}
+
+button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #043B64; /* Azul marinho */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #004080; /* Azul marinho mais claro ao passar o mouse */
+}
