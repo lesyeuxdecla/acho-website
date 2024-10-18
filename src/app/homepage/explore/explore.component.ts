@@ -14,11 +14,10 @@ export class ExploreComponent {
     { name: 'Pintura', img: 'images/pintura.png' },
     { name: 'Música', img: 'images/musica.png' },
     { name: 'Leitura', img: 'images/leitura.png' },
-    { name: 'Cerâmica', img: 'images/ceramica.png' },
-    { name: 'Pintura', img: 'images/pintura.png' },
-    { name: 'Música', img: 'images/musica.png' },
-    { name: 'Leitura', img: 'images/leitura.png' },
-    // Adicione mais hobbies conforme necessário
+    { name: 'Fotografia', img: 'images/fotografia.png' },
+    { name: 'Desenho', img: 'images/desenho.png' },
+    { name: 'Culinária', img: 'images/culinária.png' },
+    { name: 'Crochê', img: 'images/crochê.png' },
   ];
 
   moveNext() {

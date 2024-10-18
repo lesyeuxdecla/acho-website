@@ -1,8 +1,11 @@
 section {
-    padding-left: 70px;
-    padding-right: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
     padding-top: 5px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
 }
 
 img {
@@ -16,8 +19,8 @@ img {
 
 .texto {
     position: absolute;
-    top: 5%;
-    left: 8%;
+    top: 5%; 
+    left: 10%;
     right: 50%;
     color: #043B64;
     text-align: left;
@@ -31,16 +34,78 @@ img {
 
 button {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 30px; 
     padding: 10px 20px;
-    background-color: #043B64; /* Azul marinho */
-    color: #fff; /* Cor do texto branco */
+    background-color: #043B64; 
+    color: #fff; 
     border: none;
     border-radius: 15px;
     cursor: pointer;
     font-size: 20px;
+    position: absolute; 
+    top: 90%; 
+    left: 5%;
 }
 
 button:hover {
-    background-color: #004080; /* Azul marinho mais claro ao passar o mouse */
+    background-color: #004080; 
+}
+
+
+/* Responsividade */
+@media (max-width: 1440px) {
+    section {
+        padding-left: 70px; 
+        padding-right: 70px; 
+    }
+
+    .texto {
+        font-size: 40px;
+        left: 10%; 
+        top: 2%; 
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 18px; 
+        top: 90%; 
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding-left: 30px; 
+        padding-right: 30px; 
+    }
+
+    .texto {
+        font-size: 38px;
+        left: 5%; 
+        top: 2%; 
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 16px; 
+        top: 90%; 
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding-left: 15px; 
+        padding-right: 15px; 
+    }
+
+    .texto {
+        font-size: 18px;
+        left: 5%; 
+        top: 2%; 
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 14px; 
+        top: 80%; 
+    }
 }

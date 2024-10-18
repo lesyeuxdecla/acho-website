@@ -1,1 +1,104 @@
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 150px;
+    color: #E15C31;
+    margin-top: 40px;
+}
 
+.carousel-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    transition: transform 0.2s ease-in-out;
+    padding-left: 150px;
+    padding-right: 90px;
+}
+
+.card {
+        max-width: 350px;
+        max-height: 200px;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border: 2px solid #E15C31;
+        border-radius: 10px;
+        margin: 40px;
+        word-wrap: break-word;
+}
+
+.profile-info {
+    text-align: justify;
+    margin: 5px;
+}
+
+.comment-text {
+    color: #403939;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-name {
+    color: #E15C31;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #E15C31;
+}
+
+.left-arrow {
+    left: 210px;
+}
+
+.right-arrow {
+    right: 150px;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dots span {
+    height: 8px;
+    width: 8px;
+    background-color: #e7d4cd;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dots .active {
+    background-color: #E15C31;
+}

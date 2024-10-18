@@ -1,7 +1,7 @@
 .title {
     font-size: 24px;
     font-weight: bold;
-    padding-left: 70px;
+    padding-left: 150px;
     color: #E15C31;
   }
 
@@ -9,45 +9,51 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 65px;
+    gap: 50px;
     flex-wrap: wrap;
 
 }
 
 .firstimg {
     width: 100%;
-    max-width: 490px;
+    max-width: 430px;
     height: auto;
-    min-height: 320px;
+    min-height: 310px;
     object-fit: cover;
-    border-radius: 15px;
-    margin-left: -30px;
+    border-radius: 20px;
+    padding-left: 130px;
 }
 
 .secondimg {
     width: 100%;
-    max-width: 520px;
+    max-width: 480px;
     height: auto;
-    min-height: 300px;
+    min-height: 290px;
     object-fit: cover;
     border-radius: 15px;
+    padding-right: 130px;
 }
 
 .hobby-content {
     background-color: #043B64;
     color: #E15C31;
     padding: 20px;
-    text-align: justify;
+    text-align: center;
     font-size: 42px;
     width: 100%;
-    max-width: 530px;
-    min-height: 300px;
+    max-width: 520px;
+    min-height: 280px;
     border-radius: 15px;
     margin: 0 10px;
     border: 2px solid #043B64;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.2s ease;
+}
+
+.hobby-content:hover {
+    transform: scale(1.02);
 }
 
 .hobby-text {
@@ -75,9 +81,9 @@
 }
 
 /* responsividade: */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hobby-container {
-        flex-direction: column; /* Itens em coluna em telas menores */
+        flex-direction: row; /* Itens em coluna em telas menores */
         gap: 20px; /* Reduzir o espaçamento entre os elementos */
     }
 
