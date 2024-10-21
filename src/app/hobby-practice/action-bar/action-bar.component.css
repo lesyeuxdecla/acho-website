@@ -1,0 +1,31 @@
+.barra-horizontal {
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px;
+    background-color: none;
+    padding-top: 310px;
+    margin-left: 190px;
+}
+
+.botao {
+    border: 2px solid #043B64;
+    background-color: transparent; 
+    color: #043B64;
+    border-radius: 15px;
+    padding: 8px 35px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
+    margin: 0 9px;
+}
+
+.botao:hover {
+    background-color: #043B64;
+    color: #E15C31;
+}
+
+.botao.ativo {
+    background-color: #043B64; 
+    color: #E15C31;
+    border: 2px solid #043B64;
+}
