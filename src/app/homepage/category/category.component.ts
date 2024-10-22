@@ -10,14 +10,26 @@ import { Router } from '@angular/router';
 })
 export class CategoryComponent {
 
+  categorias = [
+    { nome: 'Esportes', icone: 'sports_soccer' },
+    { nome: 'Artes Marciais', icone: 'sports_mma' },
+    { nome: 'Gastronomia', icone: 'restaurant' },
+    { nome: 'Natureza', icone: 'nature' },
+    { nome: 'Intelectuais', icone: 'menu_book' },
+    { nome: 'Artísticos', icone: 'palette' },
+    { nome: 'Música', icone: 'music_note' },
+    { nome: 'Bem-Estar', icone: 'favorite' },
+    { nome: 'Manuais', icone: 'build' },
+    { nome: 'Tecnologia', icone: 'computer' },
+    { nome: 'Coleções', icone: 'collections' },
+  ];
+
   constructor(private router: Router) {}
 
-  // Método para redirecionar para a página correspondente à categoria
-  irParaCategoria(rota: string): void {
-    this.router.navigate([rota]);
+  irParaCategoria(nome: string): void {
+    this.router.navigate(['/category', nome]);
   }
 
-  // Método para fazer o scroll horizontal
   scrollDireita(): void {
     const container = document.querySelector('.categorias-container') as HTMLElement;
     container.scrollBy({ left: 200, behavior: 'smooth' });

@@ -25,8 +25,8 @@ section {
   }
   
   h1 {
-    color: #E4E2DD;
-    font-size: 32px;
+    color: #ffffff;
+    font-size: 30px;
     margin-top: 8%;
     font-weight: 700;
     letter-spacing: 1px;
@@ -36,7 +36,7 @@ section {
   }
   
   h2 {
-    color: #E4E2DD;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 400;
   }
@@ -44,7 +44,7 @@ section {
   .conta {
     border: none;
     background-color: transparent;
-    color: #E4E2DD;
+    color: #ffffff;
     margin-top: 12px;
     padding: 8px;
     font-size: 16px;
@@ -69,7 +69,7 @@ section {
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    color: #E4E2DD;
+    color: #ffffff;
   }
   
   input {
@@ -78,7 +78,7 @@ section {
     padding-left: 40px;
     padding-top: 10px;
     padding-bottom: 8px;
-    border: 2px solid #E4E2DD;
+    border: 2px solid #ffffff;
     border-radius: 12px;
     font-size: 14px;
     background-color: transparent;
@@ -86,40 +86,41 @@ section {
   
   input:focus {
     outline: none;
-    caret-color: #E4E2DD;
-    color: #E4E2DD;
+    caret-color: #ffffff;
+    color: #ffffff;
   }
   
   input:not(:focus) {
-    color: #E4E2DD;
+    color: #ffffff;
   }
   
   ::placeholder {
-    color:#E4E2DD;
+    color:#ffffff;
     opacity: 0.7;
   }
   
   .cadastrese {
     width: 160px;
     height: 40px;
-    background-color: #E4E2DD;
+    background-color: #ffffff;
     color: #E15C31;
     border-radius: 24px;
     border: none;
     box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
     font-family: "DM Sans", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 16px;
   }
   
   .cadastrese:hover {
-    background-color: #043B64;
-    color: #E4E2DD;
-    transition: background-color 0.5s ease;
+    background-color: #e15c31;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: background-color 1s ease;
   }
   
   .cadastrese:not(:hover) {
-    transition: background-color 0.5s ease;
+    transition: background-color 1s ease;
   }
   
   .entre {

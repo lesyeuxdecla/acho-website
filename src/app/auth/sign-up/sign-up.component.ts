@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
+import { LoginDashboardComponent } from '../login/login-dashboard/login-dashboard.component';
 
 @Component({
   selector: 'app-sign-up',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [NavbarComponent, LoginDashboardComponent],
   templateUrl: './sign-up.component.html',
   styleUrl: './sign-up.component.css'
 })
