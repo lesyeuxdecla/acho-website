@@ -1,6 +1,6 @@
 /* Estilos do texto fora da borda */
 .filter-info {
-  padding: 22px 0 0 200px; /* padding-top e padding-left */
+  padding: 22px 0 0 210px; /* padding-top e padding-left */
   margin-bottom: 15px;
 }
 
@@ -23,7 +23,7 @@ p.gray-text {
 
 .filter-container {
   width: 300px;
-  padding: 2px 0 0 190px;
+  padding: 2px 0 0 200px;
   background-color: white;
 }
 

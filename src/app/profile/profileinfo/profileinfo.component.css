@@ -1,0 +1,59 @@
+section {
+    padding-left: 700px;
+}
+
+.informacoes {
+    display: flex;
+}
+
+img {
+    width: 184px;
+    height: 184px;
+}
+
+.infos_principais {
+    padding-left: 40px;
+    display: block;
+    align-self: center;
+}
+
+.nome {
+    color: #043B64;
+    font-size: 24px;
+    letter-spacing: 0.8px;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.local {
+    color: #403939;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 64px;
+}
+
+.edit {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.material-icons {
+    font-size: 22px;
+}
+
+.icone_edit {
+    width: 22px;
+    height: 22px;
+    color: #043B64;
+}
+
+h3 {
+    font-size: 16px;
+    padding-left: 8px;
+    margin: 0;
+    color: #043B64;
+}

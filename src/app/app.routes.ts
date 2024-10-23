@@ -23,28 +23,45 @@ import { BenefitsComponent } from './hobby-practice/hobby-components/benefits/be
 import { MaterialsComponent } from './hobby-practice/hobby-components/materials/materials.component'; 
 import { TipsComponent } from './hobby-practice/hobby-components/tips/tips.component';  
 import { EventsComponent } from './hobby-practice/hobby-components/events/events.component';
+import { ProfileComponent } from './profile/profile.component';
+import { EditprofileComponent } from './profile/editprofile/editprofile.component';
 
 
 
 export const routes: Routes = [
-{ path: '', redirectTo: '/home', pathMatch: 'full' },
-{ path: 'home', loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule) },
+  
+  // home
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule) },
+
+  // auth
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignUpComponent },
+
+  // profile
+
+  { path: 'profile', component: ProfileComponent },
+  { path: 'editprofile', component: EditprofileComponent },
+
+  // football
  
   { path: 'football', component: FootballPageComponent},
+
+  // category
  
   { path: 'category', component: CategoryComponent },
   { path: 'category/:nome', component: CategoryDescriptionComponent },
  
- 
+ // quiz
+
   { path: 'quiz', component: QuizComponent },
   { path: 'quizdash', component: QuizdashComponent },
   { path: 'quizinstructions', component: QuizinstructionsComponent },
   { path: 'quizquestion', component: QuizquestionComponent  },
   { path: 'quizresult', component: QuizresultComponent},
 
- 
+  // hobby-practice
+
   { path: 'practiceyourhobby', component: PracticeyourhobbyComponent },
   { path: 'origin', component: OriginComponent },
   { path: 'fundamentals', component: FundamentalsComponent },

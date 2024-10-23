@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    align-items: flex-start; /* Alinha os elementos ao topo */
+    gap: 20px; /* Espaço entre os dois componentes */
+  }
+  
+  app-sidebar {
+    flex: 0 0 250px; /* Define a largura fixa do sidebar */
+    padding-right: 20px; /* Espaçamento interno do sidebar */
+  }
+  
+  app-profileinfo {
+    flex: 1; /* O profileinfo ocupará o restante da largura disponível */
+    padding-left: 20px; /* Espaçamento interno do profileinfo */
+  }
+  
