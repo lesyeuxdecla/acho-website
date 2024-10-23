@@ -113,8 +113,8 @@ section {
   }
   
   .cadastrese:hover {
-    background-color: #e15c31;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #E15C31;
     border: 1px solid #ffffff;
     transition: background-color 1s ease;
   }

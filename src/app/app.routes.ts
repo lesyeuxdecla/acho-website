@@ -25,6 +25,9 @@ import { TipsComponent } from './hobby-practice/hobby-components/tips/tips.compo
 import { EventsComponent } from './hobby-practice/hobby-components/events/events.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EditprofileComponent } from './profile/editprofile/editprofile.component';
+import { SchoolDescriptionComponent } from './hobby-practice/hobby-components/school-description/school-description.component';
+import { ResultComponent } from './hobby-practice/hobby-components/result/result.component';
+import { RatingsComponent } from './hobby-practice/hobby-components/ratings/ratings.component';
 
 
 
@@ -69,6 +72,13 @@ export const routes: Routes = [
   { path: 'materials', component: MaterialsComponent },
   { path: 'tips', component: TipsComponent},
   { path: 'events', component: EventsComponent},
+
+// practice your hobby
+
+{ path: 'school', component: SchoolDescriptionComponent},
+{ path: 'result', component: ResultComponent},
+{ path: 'ratings', component: RatingsComponent}
+
 ];
 
 @NgModule({

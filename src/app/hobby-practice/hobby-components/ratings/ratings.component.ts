@@ -4,10 +4,10 @@ import { CommonModule } from '@angular/common';
 
 interface Review {
   username: string;
-  profilePic: string;
   date: string;
   comment: string;
   rating: number;
+  profilePic: string;
 }
 
 @Component({
@@ -17,39 +17,62 @@ interface Review {
   templateUrl: './ratings.component.html',
   styleUrl: './ratings.component.css'
 })
+
 export class RatingsComponent {
-
-  @Input() averageRating: number = 0;
-  @Input() reviewCount: number = 0;
-  @Input() reviews: Review[] = [];
-
-  newReview: string = '';
-  newRating: number = 0;
+  averageRating: number = 4.9;
+  reviewCount: number = 2;
+  reviews: Review[] = [
+      {
+          username: 'Ana Paula Moraes',
+          date: '3 meses atrás',
+          comment: 'Ótimo ambiente e treinamento de qualidade. Meu filho adora!',
+          rating: 4.9,
+          profilePic: 'images/profileana.png'
+      },
+      {
+          username: 'Matheus Vieira',
+          date: '2 semanas atrás',
+          comment: 'Meu filho ama, toda semana fica ansioso para ir. Ótimos professores, aulas dinâmicas, ambiente acolhedor.',
+          rating: 5.0,
+          profilePic: 'images/profilematheus.png'
+      }
+  ];
+  newComment: string = '';
+  newRating: number = 5;
 
   addReview() {
-    const date = new Date().toLocaleDateString();
-    this.reviews.push({
-      username: 'Usuário', // Aqui você pode substituir pelo nome do usuário logado
-      profilePic: 'path/to/user.jpg', // Aqui você pode substituir pela foto do usuário logado
-      date,
-      comment: this.newReview,
-      rating: this.newRating
-    });
-    this.newReview = '';
-    this.newRating = 0;
+      const newReview: Review = {
+          username: 'Catarina Santos',
+          date: new Date().toLocaleDateString(),
+          comment: this.newComment,
+          rating: this.newRating,
+          profilePic: 'images/profile.png' 
+      };
+
+      this.reviews.push(newReview);
+      this.reviewCount = this.reviews.length;
+      this.newComment = '';
+      this.newRating = 4;
   }
 
-  getStars(rating: number): string[] {
+  getStars(rating: number) {
     const stars = [];
-    for (let i = 0; i < 5; i++) {
-      if (i < Math.floor(rating)) {
-        stars.push('filled');
-      } else if (i < rating) {
-        stars.push('half-filled');
-      } else {
-        stars.push('empty');
-      }
+    const fullStarCount = Math.floor(rating); 
+    const halfStar = rating % 1 >= 0.5 ? 'star-half' : ''; 
+    const emptyStarCount = 5 - fullStarCount - (halfStar ? 1 : 0); 
+
+    for (let i = 0; i < fullStarCount; i++) {
+      stars.push('star-full');
     }
+
+    if (halfStar) {
+      stars.push(halfStar);
+    }
+
+    for (let i = 0; i < emptyStarCount; i++) {
+      stars.push('star-empty');
+    }
+
     return stars;
   }
 }
