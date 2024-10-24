@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { RouterModule, Router } from '@angular/router';
 import { ProfileRoutingModule } from './profile-routing.module';
 
 
@@ -8,7 +8,7 @@ import { ProfileRoutingModule } from './profile-routing.module';
   declarations: [],
   imports: [
     CommonModule,
-    ProfileRoutingModule
+    ProfileRoutingModule, RouterModule
   ]
 })
 export class ProfileModule { }
