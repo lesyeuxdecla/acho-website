@@ -3,8 +3,9 @@
     justify-content: flex-start;
     padding: 8px;
     background-color: none;
-    padding-top: 310px;
-    margin-left: 190px;
+    padding-top: 360px;
+    padding-left: 168px;
+    gap: 16px;
 }
 
 .botao {
@@ -16,7 +17,6 @@
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     font-size: 18px;
-    margin: 0 9px;
 }
 
 .botao:hover {

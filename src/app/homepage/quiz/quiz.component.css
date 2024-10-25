@@ -1,50 +1,58 @@
 section {
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 5px;
+    padding-top: 16px;
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
+    padding-bottom: 20px;
+    padding-left: 70px; 
+    padding-right: 70px; 
 }
 
 img {
-    width: 100%;
+    width: 84.5%;
+    padding-left: 98px;
     height: auto;
-    max-height: 600px;
+    max-height: 512px;
     object-fit: cover;
-    padding-bottom: 10px;
     border-radius: 10px;
 }
 
 .texto {
     position: absolute;
-    top: 5%; 
-    left: 10%;
-    right: 50%;
+    padding-right: 50%;
+    padding-top: 4%;
     color: #043B64;
     text-align: left;
-    font-size: 66px;
+    font-size: 40px;
+    left: 10%; 
+    top: 2%; 
     font-weight: 500;
     line-height: 1.5; 
-    padding: 10px 15px; 
     width: fit-content;
     border-radius: 8px;
 }
 
+p {
+    padding-left: 24%;
+    padding-bottom: 24px;
+}
+
+.botao {
+    padding-left: 24%;
+}
+
 button {
     display: inline-block;
-    margin-top: 30px; 
-    padding: 10px 20px;
+    position: absolute; 
+    cursor: pointer;
+    border: none;
     background-color: #043B64; 
     color: #fff; 
-    border: none;
     border-radius: 15px;
-    cursor: pointer;
     font-size: 20px;
-    position: absolute; 
-    top: 90%; 
-    left: 5%;
+    padding: 8px 15px;
+    font-size: 18px; 
 }
 
 button:hover {
@@ -53,59 +61,3 @@ button:hover {
 
 
 /* Responsividade */
-@media (max-width: 1440px) {
-    section {
-        padding-left: 70px; 
-        padding-right: 70px; 
-    }
-
-    .texto {
-        font-size: 40px;
-        left: 10%; 
-        top: 2%; 
-    }
-
-    button {
-        padding: 8px 15px;
-        font-size: 18px; 
-        top: 90%; 
-    }
-}
-
-@media (max-width: 768px) {
-    section {
-        padding-left: 30px; 
-        padding-right: 30px; 
-    }
-
-    .texto {
-        font-size: 38px;
-        left: 5%; 
-        top: 2%; 
-    }
-
-    button {
-        padding: 6px 12px;
-        font-size: 16px; 
-        top: 90%; 
-    }
-}
-
-@media (max-width: 480px) {
-    section {
-        padding-left: 15px; 
-        padding-right: 15px; 
-    }
-
-    .texto {
-        font-size: 18px;
-        left: 5%; 
-        top: 2%; 
-    }
-
-    button {
-        padding: 5px 10px;
-        font-size: 14px; 
-        top: 80%; 
-    }
-}
