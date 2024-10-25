@@ -1,37 +1,48 @@
 /* Estilos do texto fora da borda */
 .filter-info {
-  padding: 22px 0 0 210px; /* padding-top e padding-left */
-  margin-bottom: 15px;
+  padding: 22px 0 0px 168px;
 }
 
 .gray-text {
   color: #403939;
   font-size: 18px;
+  margin: 0;
+}
+
+h3 {
+  padding-bottom: 8px;
 }
 
 .blue-text {
   color: #043B64;
   font-size: 18px;
   font-weight: 600;
+  margin: 0;
 }
 
 p.gray-text {
   color: #403939;
+  padding-top: 4px;
   margin-bottom: 16px;
 }
 
+.container-total {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .filter-container {
-  width: 300px;
-  padding: 2px 0 0 200px;
-  background-color: white;
+  max-width: 300px;
+  padding: 2px 0 0 0;
+  background-color: white;  
 }
 
 .input-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 40px 0;
+  padding-top: 32px;
 }
 
 .orange-text {
