@@ -27,13 +27,13 @@ section {
     padding-top: 28px;
     display: flex;
     justify-content: center;
-    gap: 64px;
+    gap: 20px;
     transition: transform 0.2s ease-in-out;
 }
 
 .card {
-    width: 350px;
-    height: 224px;
+    width: 304px;
+    height: 240px;
     box-sizing: border-box;
     padding-left: 12px;
     padding-right: 12px;
@@ -84,11 +84,11 @@ section {
 }
 
 .left-arrow {
-    padding-left: 34%;
+    padding-left: 12%;
 }
 
 .right-arrow {
-    padding-left: 65%;
+    padding-left: 86.6%;
 }
 
 .dots {

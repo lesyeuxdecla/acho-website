@@ -1,5 +1,8 @@
+section {
+    padding: 22px 160px 0 168px;
+}
+
 .school-description {
-    padding: 30px 0 0 210px;
     max-width: 1400px;
     position: relative;
 }
@@ -26,18 +29,18 @@
     color: #403939;
     font-weight: bold;
     font-size: 18px;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .description {
     color: #403939;
     font-size: 16px;
-    margin: 10px 0;
+    padding: 10px 0;
     text-align: justify;
 }
 
 .info-section {
-    margin: 50px 0;
+    padding: 50px 0;
     font-weight: 500;
     display: flex; 
     align-items: flex-start;
@@ -55,7 +58,7 @@
     align-items: center; 
     width: auto; 
     padding: 12px;
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
 .investment-minimium {
@@ -95,24 +98,23 @@
 
 .material-icons {
     vertical-align: middle; 
-    margin-right: 5px;
+    padding-right: 5px;
 }
 
 
 .escolas {
     color: #403939;
     font-size: 14px;
-  }
+}
   
-  .centro-treinamento {
+.centro-treinamento {
     color: #043B64;
     font-size: 16px;
     font-weight: bold;
-  }
+}
 
-  .navegar {
-    padding-left: 210px;
-    padding-top: 300px;
-  }
+.navegar {
+    padding-top: 328px;
+}
   
   

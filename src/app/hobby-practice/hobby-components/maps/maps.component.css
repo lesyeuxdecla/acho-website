@@ -1,9 +1,9 @@
 #mapa-fake {
-  height: 340px;
   padding-left: 168px; 
   display: flex;
   justify-content: left;
   align-items: flex-start;
+  padding-bottom: 56px;
 }
   
 #mapa-fake img {
@@ -14,7 +14,7 @@
 
 .maps-info {
   padding: 22px 0 0 168px; /* padding-top e padding-left */
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .gray-text {
@@ -41,7 +41,6 @@ p.gray-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
 }
 
 #filter-button {

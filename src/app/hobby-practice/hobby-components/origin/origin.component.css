@@ -1,99 +1,52 @@
+.content {
+  text-align: justify;
+  padding: 22px 320px 0 168px;
+  height: auto;
+}
 
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .content {
-    text-align: justify;
-    font-size: 16px;
-    max-width: 44%;
-    padding-left: 500px;
-    padding-top: 30px;
-  }
-  
-  .image-text-section {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    justify-content: flex-start;
-    gap: 20px;
-  }
-  
-  .image-text-section img {
-    width: 400px;
-    height: auto;
-    margin-right: 20px;
-  }
-  
-  .image-text-section p {
-    flex: 1;
-    margin: 0;
-    margin-left: 0;
-    padding-right: 20px;
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  .image-text-section img:last-child {
-    margin-right: 0;
-  }
-  
-  .image-text-section + .image-text-section {
-    margin-top: 20px;
-  }
-  
-  .image {
-    width: auto;
-    height: auto;
-    max-height: 200px;
-  }
-  
-  .text-image {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  
-  .container-p1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-  
-  .p1 {
-    width: 160%;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: justify;
-    margin: 9px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      width: 100%;
-    }
-  
-    .text-image {
-      flex-direction: column;
-      margin-right: 0;
-      margin-bottom: 15px;
-    }
-  
-    .image-text-section {
-      flex-direction: column;
-    }
-  
-    .image-text-section img {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      margin-top: 50px;
-    }
-  
-  }
-  
+.image-text-section {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 16px;
+}
+
+.image-text-section img {
+  width: 400px;
+  height: auto;
+}
+
+.image-text-section p {
+  flex: 1;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.image-text-section img:last-child {
+  padding-right: 0;
+}
+
+.image-text-section + .image-text-section {
+  padding-top: 20px;
+}
+
+.text-image {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-right: 20px;
+}
+
+
+.container-p1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.p1 {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
