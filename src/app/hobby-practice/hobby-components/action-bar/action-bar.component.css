@@ -29,3 +29,51 @@
     color: #E15C31;
     border: 2px solid #043B64;
 }
+
+
+
+
+/* Ajustes para telas com largura máxima de 1024px (tablets) */
+@media (max-width: 1024px) {
+    .barra-horizontal {
+        margin-left: 50px;
+        padding-top: 250px;
+    }
+
+    .botao {
+        font-size: 16px;
+        padding: 8px 30px;
+        margin: 0 7px;
+    }
+}
+
+/* Ajustes para telas com largura máxima de 768px (tablets menores e celulares em landscape) */
+@media (max-width: 768px) {
+    .barra-horizontal {
+        margin-left: 30px;
+        padding-top: 200px;
+        flex-wrap: wrap; /* Para quebrar a linha se necessário */
+    }
+
+    .botao {
+        font-size: 14px;
+        padding: 8px 25px;
+        margin: 0 5px;
+    }
+}
+
+/* Ajustes para telas com largura máxima de 480px (celulares) */
+@media (max-width: 480px) {
+    .barra-horizontal {
+        margin-left: 15px;
+        padding-top: 150px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .botao {
+        font-size: 12px;
+        padding: 6px 20px;
+        margin: 5px;
+    }
+}
