@@ -1,30 +1,26 @@
-
 .explorar-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 120px;
-  padding-bottom: 5px;
-  padding-left: 120px;
+  padding: 32px 148px 8px 164px;
 }
 
 .title {
   font-size: 24px;
-  font-weight: bold;
-  padding-left: 30px;
+  font-weight: 600;
   color: #E15C31;
-  margin-bottom: 0;
+  margin: 0; 
 }
 
 button.seta-direita {
   background: none;
   border: none;
   color: #E15C31;
-  font-size: 32px;
+  font-size: 24px;
   cursor: pointer;
   display: flex;
-  align-self: flex-end;
-  padding-right: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .material-icons {
@@ -34,11 +30,11 @@ button.seta-direita {
 /* containers de hobbies */
 .hobby-containers {
   display: flex;
-  gap: 10px;
-  padding-top: 2px;
-  padding-left: 150px;
   overflow-x: auto;
-  padding-bottom: 15px;
+  gap: 16px;
+  padding: 8px 156px 20px 164px;
+
+  scrollbar-width: none;
 }
 
 .hobby-container {
@@ -52,9 +48,10 @@ button.seta-direita {
 .hobby-name {
   font-size: 1rem;
   color: #043B64;
+  font-size: 16px;
   font-weight: 500;
   padding-bottom: 10px;
-  padding-top: 10px;
+  margin: 0;
 }
 
 .image-container {

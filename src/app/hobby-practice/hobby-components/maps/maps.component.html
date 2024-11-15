@@ -1,20 +1,20 @@
 <div class="maps-info">
-    <label class="blue-text">Selecione sua área de alcance</label>
-    <p class="gray-text">: selecione ou digite sua área de alcance.</p>
-  </div>
+  <label class="blue-text">Selecione sua área de alcance</label>
+  <p class="gray-text">: selecione ou digite sua área de alcance.</p>
+</div>
+
 <div id="mapa-fake">
-    <img src="images/mapa.png" alt="Mapa Fake">
-  </div>
- 
-  
-  <div class="button-container" style="text-align: center; padding-top: 20px;">
-    <button id="filter-button" (click)="showResults = !showResults">
-      Aplicar Filtros
-    </button>
-  </div>
-  
-  <!-- Componente de Resultados -->
-  <div *ngIf="showResults">
-    <app-result></app-result>
-  </div>
+  <img src="images/mapa.png" alt="Mapa Fake">
+</div>
+
+<div class="button-container">
+  <button id="filter-button" (click)="showResults = !showResults">
+    Aplicar Filtros
+  </button>
+</div>
+
+<!-- Componente de Resultados -->
+<div *ngIf="showResults">
+  <app-result></app-result>
+</div>
   

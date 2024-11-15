@@ -1,141 +1,144 @@
 .background-container {
-    background-color: #043B64;
-    width: 100%;
-    height: 580px;
-    z-index: -1;
-  }
-  
-  header {
-    background-color: #043B64;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 64px;
-    position: relative;
-  }
-  
-  .logo img {
-    max-width: 104px;
-    height: auto;
-  }
+  background-color: #043B64;
+  width: 100%;
+  height: 580px;
+  z-index: -1;
+}
 
-  .nav-container {
-    display: flex;
-    align-items: center;
-  }
+header {
+  background-color: #043B64;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 64px;
+  position: relative;
+}
 
-  nav {
-    display: flex;
-  }
+.logo img {
+  max-width: 104px;
+  height: auto;
+}
 
-  .nav-link {
-    color: #E4E2DD;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 0 16px 0 14px;
-  }
+.nav-container {
+  display: flex;
+  align-items: center;
+}
 
-  .nav-link-contate {
-    color: #E15C31;
-  }
+nav {
+  display: flex;
+}
 
-  .user-actions {
-    display: flex;
-    align-items: center;
-  }
+.nav-link {
+  color: #E4E2DD;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 16px 0 14px;
+}
 
-  .user-actions a {
-    color: #E15C31;
-    padding: 0 12px 0 12px;
-    display: flex;
-    text-decoration: none;
-  }
+.nav-link-contate {
+  color: #E15C31;
+}
 
-  .icon-link {
-    color: #E15C31;
-    font-size: 24px;
-  }
+.user-actions {
+  display: flex;
+  align-items: center;
+}
 
-  .material-icons {
-    color: #E15C31;
-  }
+.user-actions a {
+  color: #E15C31;
+  padding: 0 12px 0 12px;
+  display: flex;
+  text-decoration: none;
+}
 
-  .dynamic-content {
-    display: flex; 
-    align-items: center;
-    padding: 20px; 
-  }
-  
-  .category-info {
-    display: flex;
-    align-items: center; 
-  }
-  
-  .category-info img {
-    padding-left: 150px;
-    max-width: 550px; 
-    height: auto;
-  }
-  
-  .category-info h1 {
-    padding-left: 100px;
-    color: #E4E2DD;
-    font-size: 180px;
-  }
+.icon-link {
+  color: #E15C31;
+  font-size: 24px;
+}
 
-  .info-container {
-    display: flex; 
-    align-items: flex-start;
-    margin: 5px 210px 0;
-  }
-  .description-text {
-    color: #403939;
-    font-weight: 500;
-    text-align: justify;
-    max-width: 930px;
-    font-size: 24px;
-  }
-  
-  .investment-box {
-    margin-top: 10px;
-    background-color: white; 
-    border: 2px solid #043B64;
-    border-radius: 10px;
-    width: 255px;
-    height: auto;
-    padding: 12px;
-    margin-left: 170px;
-  }
+.material-icons {
+  color: #E15C31;
+}
 
- .investment-minimium {
-    color: #043B64;
-    font-size: 35px;
-    font-weight: bold;
-    padding-bottom: 0;
-    margin: 0;
- }
- 
- .minimium {
-    color: #043B64;
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 0;
-    margin: 0;
- }
-  
-  .investment-value {
-    color: #E15C31; 
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 6px;
-  }
+.dynamic-content {
+  display: flex; 
+  align-items: center;
+  padding: 20px; 
+}
+.category-info {
+  display: flex;
+  align-items: center; 
+}
 
-  
-  .cost-note {
-    font-size: 12px;
-    color: #403939;
-    margin-top: 0;
-    margin: 0;
-  }
-  
+.category-info img {
+  padding-left: 104px;
+  max-width: 550px; 
+  height: auto;
+}
+
+.category-name {
+  padding-left: 40px;
+  padding-top: 144px;
+  color: #E4E2DD;
+  font-size: 128px;
+}
+
+.container-total {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-container {
+  display: flex; 
+  align-items: flex-start;
+  padding-left: 168px;
+  padding-right: 64px;
+}
+
+.description-text {
+  color: #403939;
+  font-weight: 500;
+  text-align: justify;
+  max-width: 680px;
+  font-size: 24px;
+}
+
+.investment-box {
+  background-color: white; 
+  border: 2px solid #043B64;
+  border-radius: 10px;
+  width: 224px;
+  height: 104px;
+  padding: 12px;
+}
+
+.investment-minimium {
+  color: #043B64;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.minimium {
+  color: #043B64;
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.investment-value {
+  color: #E15C31; 
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.cost-note {
+  font-size: 14px;
+  color: #403939;
+  padding-top: 8px;
+  margin: 0;
+}

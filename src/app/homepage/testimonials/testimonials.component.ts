@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class TestimonialsComponent {
   comments : { name: string; img: string; text: string; }[] = [
-    { name: 'Julia', img: 'images/profileavatar3.png', 
+    { name: 'Julia Fernandes', img: 'images/profileavatar3.png', 
       text: ' Agora estou mergulhando nesse novo hobby de cerâmica e amando cada momento! Achar a escola perfeita pelo site foi um ganho de tempo enorme' },
 
     { name: 'Gabriel Moreira', img: 'images/profileavatar1.png', 
@@ -35,7 +35,7 @@ export class TestimonialsComponent {
     { name: 'Mariana Oliveira', img: 'images/profileavatar5.png', 
       text: 'Incrível, o quiz foi minha parte favorita já que estava bem perdida em relação ao que fazer. Descobri hobbies extraordináriamente inimagináveis' },
 
-    { name: 'Clara', img: 'images/profileavatar7.png', 
+    { name: 'Clara Amorian', img: 'images/profileavatar7.png', 
       text: 'É um site que eu irei usar com frequência, muito bom. Recomendo fazer o quiz, me ajudou a encontrar um hobby que realmente combina com meus interesses.' }
   ];
   visibleComments: { name: string; img: string; text: string; }[] = [];

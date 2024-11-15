@@ -1,40 +1,48 @@
+section {
+    padding-top: 24px;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    padding: 32px 148px 8px 164px;
+}
+
 .title {
     font-size: 24px;
-    font-weight: bold;
-    padding-left: 150px;
+    font-weight: 600;
     color: #E15C31;
-    margin-top: 40px;
+    margin: 0; 
 }
 
 .carousel-container {
     position: relative;
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .carousel {
+    width: 100%;
+    padding-top: 28px;
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 20px;
     transition: transform 0.2s ease-in-out;
-    padding-left: 150px;
-    padding-right: 90px;
 }
 
 .card {
-        max-width: 350px;
-        max-height: 200px;
-        box-sizing: border-box;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border: 2px solid #E15C31;
-        border-radius: 10px;
-        margin: 40px;
-        word-wrap: break-word;
+    width: 304px;
+    height: 240px;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid #E15C31;
+    border-radius: 10px;
+    word-wrap: break-word;
 }
 
 .profile-info {
@@ -45,23 +53,22 @@
 .comment-text {
     color: #403939;
     font-weight: 500;
-    margin-top: 10px;
 }
 
 .profile {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 20px;
 }
 
 .profile-img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 10px;
 }
 
 .profile-name {
+    padding-left: 8px;
     color: #E15C31;
 }
 
@@ -77,16 +84,16 @@
 }
 
 .left-arrow {
-    left: 210px;
+    padding-left: 12%;
 }
 
 .right-arrow {
-    right: 150px;
+    padding-left: 86.6%;
 }
 
 .dots {
     text-align: center;
-    margin-top: 10px;
+    padding-top: 16px;
 }
 
 .dots span {
