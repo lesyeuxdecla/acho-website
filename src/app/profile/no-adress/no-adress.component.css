@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .mensagem {
+    text-align: center;
+    font-size: 16px;
+    color: #403939;
+    margin-bottom: 20px;
+  }
+  
+  .botao-container {
+    position: absolute;
+    bottom: 150px;
+    left: 70%;
+  }
+  
+  .botao {
+    background-color: #043b64;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao:hover {
+    background-color: #E15C31;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .botao-container {
+      bottom: 100px;
+      left: 50%; 
+      transform: translateX(-50%); 
+    }
+  
+    .mensagem {
+      font-size: 14px;
+    }
+  
+    .botao {
+      width: 100%; 
+      padding: 12px 0;
+      font-size: 16px;
+    }
+  }
+  
+ 
+  @media (max-width: 480px) {
+    .botao-container {
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .mensagem {
+      font-size: 12px;
+    }
+  
+    .botao {
+      width: 100%;
+      padding: 12px 0;
+      font-size: 14px;
+    }
+  }

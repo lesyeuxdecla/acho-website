@@ -29,6 +29,12 @@ import { SchoolDescriptionComponent } from './hobby-practice/hobby-components/sc
 import { ResultComponent } from './hobby-practice/hobby-components/result/result.component';
 import { RatingsComponent } from './hobby-practice/hobby-components/ratings/ratings.component';
 
+import { FormsComponent } from './theforms/forms/forms.component';
+import { FormsSchoolComponent } from './theforms/forms-school/forms-school.component';
+import { FormsSubscriptionComponent } from './theforms/forms-subscription/forms-subscription.component';
+import { ContactNavComponent } from './shared/contact-nav/contact-nav.component';
+
+
 
 
 export const routes: Routes = [
@@ -36,10 +42,15 @@ export const routes: Routes = [
   // home
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule) },
+  { path: 'contate', component: ContactNavComponent },
 
   // auth
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignUpComponent },
+  { path: 'forms_company', component: FormsComponent},
+  { path: 'forms_school', component: FormsSchoolComponent},
+  { path: 'forms_student', component: FormsSubscriptionComponent},
+
 
   // profile
 
