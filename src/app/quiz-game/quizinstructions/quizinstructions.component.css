@@ -37,6 +37,7 @@ section {
 .continuar {
   width: 160px;
   height: 40px;
+  font-family: dm sans;
   background-color: transparent;
   color: #e15c31;
   border-radius: 24px;

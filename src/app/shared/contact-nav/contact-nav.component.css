@@ -156,7 +156,7 @@
     border: 1px solid #E15C31;
     padding: 20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
   }
   
   .empresa-image {
@@ -186,7 +186,8 @@
   .btn-custom {
     background-color: #E15C31;
     color: #fff;
-    padding: 8px 35px;
+    font-family: dm sans;
+    padding: 15px 35px;
     border: none;
     border-radius: 10px;
     cursor: pointer;

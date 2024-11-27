@@ -99,6 +99,7 @@ button.seta-esquerda {
   position: absolute;
   bottom: 10px;
   left: 30%;
+  font-family: dm sans;
   transform: translateX(-15%);
   background-color: #E15C31;
   color: white;
