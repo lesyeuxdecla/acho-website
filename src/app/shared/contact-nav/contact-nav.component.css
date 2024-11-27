@@ -34,7 +34,7 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Sombra para o texto */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
   }
   
   
@@ -117,8 +117,9 @@
   }
   
   .email-description {
-    font-size: 0.875rem;
+    font-size: 0.895rem;
     color: #403939;
+    text-align: justify;
   }
   
   .btn-custom {

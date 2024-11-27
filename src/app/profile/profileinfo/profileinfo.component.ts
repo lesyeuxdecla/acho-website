@@ -9,10 +9,5 @@ import { RouterModule, Router } from '@angular/router';
   styleUrl: './profileinfo.component.css'
 })
 export class ProfileinfoComponent {
-  constructor(private router: Router) {}
-
-  navegarParaEditProfile () {
-    console.log("Ir para Editar Perfil");
-    this.router.navigate(['/editprofile']);
-  }
+ 
 }

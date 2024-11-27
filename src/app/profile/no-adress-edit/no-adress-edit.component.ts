@@ -13,6 +13,6 @@ export class NoAdressEditComponent {
   constructor(private router: Router) {}
 
   voltarParaNoAdress() {
-    this.router.navigate(['/no-adress']);
+    this.router.navigate(['../profile/enderecos'], { relativeTo: this.router.routerState.root.firstChild }); 
   }
 }

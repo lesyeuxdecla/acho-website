@@ -2,7 +2,10 @@
 
 <div class="container">
     <app-sidebar class="sidebar"></app-sidebar>
-    <app-profileinfo class="profileinfo"></app-profileinfo>
+    
+    <div class="profile-info">
+        <router-outlet></router-outlet>
+    </div>
 </div>
-<router-outlet></router-outlet>
+
 <app-footer class="footer"></app-footer>

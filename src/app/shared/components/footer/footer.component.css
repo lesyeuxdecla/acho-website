@@ -1,6 +1,5 @@
 section {
-  padding-top: 200px;
-  padding-bottom: 24px;
+  padding: 150px 0 28px 0;
 }
 
 footer {
@@ -17,15 +16,15 @@ hr {
 }
 
 .footer-container {
-  padding-top: 24px;
-  width: 100%;
+  padding-top: 40px;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; 
 }
 
 .footer-left, .footer-right {
-  width: 44%;
+  width: 32%;
 }
 
 

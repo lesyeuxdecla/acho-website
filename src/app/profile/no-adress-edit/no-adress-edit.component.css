@@ -1,15 +1,12 @@
 .centraliza {
     display: flex;
-    justify-content: center;
     align-items: flex-start;
-    padding: 35px;
-    height: 100vh;
   }
   
   .container {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 300px;
     width: 100%;
   }
   
@@ -22,8 +19,8 @@
   }
   
   .header span {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
     color: #403939;
   }
   
@@ -34,7 +31,7 @@
   .formulario {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
     width: 100%;
   }
   
@@ -47,13 +44,15 @@
   .campo {
     display: flex;
     flex-direction: column;
-    min-width: 90px;
+    min-width: 100px;
   }
   
   .campo h4 {
     font-size: 14px;
-    margin-bottom: 4px;
-    color: #403939;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #e15c31;
+
   }
   
   .campo-cep {
@@ -73,7 +72,7 @@
   }
   
   .campo-rua {
-    width: 400px;
+    width: 320px;
   }
   
   .campo-numero {
@@ -81,16 +80,17 @@
   }
   
   .campo-complemento {
-    width: 400px;
+    width: 320px;
   }
   
   input {
     height: 40px;
-    padding: 0 12px;
+    padding: 0 10px;
     border: 1px solid #40393966;
     border-radius: 12px;
-    font-size: 14px;
-    background-color: #e4e2ddcc;
+    font-size: 15px;
+    font-family: dm sans;
+    background-color: none;
   }
   
   input:focus {
@@ -99,13 +99,13 @@
   }
   
   input::placeholder {
-    color: #40393999;
+    color: #403939;
   }
   
   .botao-container {
     display: flex;
     justify-content: flex-end;
-    margin-top: 20px;
+    padding-top: 30px;
   }
   
   .botao {
@@ -113,8 +113,9 @@
     color: #ffffff;
     border: none;
     border-radius: 20px;
-    padding: 10px 50px;
+    padding: 15px 30px;
     font-size: 14px;
+    font-family: dm sans;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;

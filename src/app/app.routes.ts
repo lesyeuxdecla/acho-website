@@ -23,8 +23,12 @@ import { BenefitsComponent } from './hobby-practice/hobby-components/benefits/be
 import { MaterialsComponent } from './hobby-practice/hobby-components/materials/materials.component'; 
 import { TipsComponent } from './hobby-practice/hobby-components/tips/tips.component';  
 import { EventsComponent } from './hobby-practice/hobby-components/events/events.component';
-import { ProfileComponent } from './profile/profile.component';
+
+
 import { EditprofileComponent } from './profile/editprofile/editprofile.component';
+
+
+
 import { SchoolDescriptionComponent } from './hobby-practice/hobby-components/school-description/school-description.component';
 import { ResultComponent } from './hobby-practice/hobby-components/result/result.component';
 import { RatingsComponent } from './hobby-practice/hobby-components/ratings/ratings.component';
@@ -54,7 +58,7 @@ export const routes: Routes = [
 
   // profile
 
-  { path: 'profile', component: ProfileComponent },
+  { path: 'profile', loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule) }, 
   { path: 'editprofile', component: EditprofileComponent },
 
   // football
