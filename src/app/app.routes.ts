@@ -40,7 +40,6 @@ import { ContactNavComponent } from './shared/contact-nav/contact-nav.component'
 
 
 
-
 export const routes: Routes = [
   
   // home
@@ -60,6 +59,9 @@ export const routes: Routes = [
 
   { path: 'profile', loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule) }, 
   { path: 'editprofile', component: EditprofileComponent },
+
+  // company
+  { path: 'company', loadChildren: () => import('./company/company.module').then(m => m.CompanyModule) },
 
   // football
  
