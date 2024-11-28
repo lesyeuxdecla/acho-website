@@ -36,6 +36,7 @@
     font-weight: 500;
     color: #403939;
     padding-bottom: 5px;
+    font-family: dm sans;
   }
   
   .label-custom-serv {
@@ -55,6 +56,7 @@
     box-sizing: border-box;
     font-size: 1rem;
     padding-bottom: 10px;
+    font-family: dm sans;
   }
   
 
@@ -63,6 +65,7 @@
     border-color: #17616E;
     outline: none;
     box-shadow: 0 0 5px rgba(23, 97, 110, 0.5);
+    font-family: dm sans;
   }
   
   
@@ -75,6 +78,7 @@
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: dm sans;
   }
   
   .btn-custom:disabled {

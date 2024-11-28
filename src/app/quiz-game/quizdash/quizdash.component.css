@@ -16,7 +16,7 @@ section {
 .fundo img {
   width: 100%;
   height: auto;
-  opacity: 0.5;
+  opacity: 0.4;
   display: block;
 }
 
@@ -26,12 +26,12 @@ section {
   left: 50%;
   transform: translate(-50%, -30%);
   text-align: center;
-  width: 100%;
+  width: 90%;
 }
 
 h1 {
-  color: #403939;
-  font-size: 4vw;
+  color: #332d2d;
+  font-size: 3vw;
 }
 
 .highlight {

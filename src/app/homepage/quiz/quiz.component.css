@@ -40,6 +40,7 @@ button {
   display: inline-block;
   position: absolute;
   cursor: pointer;
+  font-family: dm sans;
   border: none;
   background-color: #043B64;
   color: #fff;

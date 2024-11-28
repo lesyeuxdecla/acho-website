@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NavgreenComponent } from "../../shared/components/navbar/navgreen/navgreen.component";
+import { Router } from '@angular/router';
+Router
 
 @Component({
   selector: 'app-forms',
@@ -13,7 +15,7 @@ import { NavgreenComponent } from "../../shared/components/navbar/navgreen/navgr
 export class FormsComponent {
   formulario: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router: Router) {
     this.formulario = this.fb.group({
       nome: ['', Validators.required],
       cnpj: ['', [Validators.required, Validators.pattern(/^\d{14}$/)]],
@@ -45,5 +47,9 @@ export class FormsComponent {
     } else {
       alert('Por favor, preencha os campos obrigatórios!');
     }
+  }
+
+  voltarParaContateNav() {
+    this.router.navigate(['../contate'], { relativeTo: this.router.routerState.root.firstChild }); 
   }
 }
