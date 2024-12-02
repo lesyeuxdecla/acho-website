@@ -1,8 +1,11 @@
 <section>
-    <div class="retangulo">
-        <h1>Minha Conta</h1>
-<div class="botoes">
-    
+    <div class="retangulo" [class.hidden]="!sidebarVisible">
+      <button class="toggle-button" (click)="toggleSidebar()">Minha Conta<i class="material-icons">more_vert</i>
+      </button>
+
+
+    <h1>Minha Conta</h1>
+    <div class="botoes"> 
     <div class="espaco">
       <button class="dados" [ngClass]="{'ativo': selectedButton === 'dados'}" (click)="navigateTo('/profile/dados')">
         <a class="icone_perfil" *ngIf="selectedButton === 'dados'"><i class="material-icons">person</i></a>

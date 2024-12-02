@@ -60,11 +60,10 @@
 .button-container {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     width: 900px;
     height: 200px;
-    padding-left: 10px;
-    padding-top: 80px; 
-    padding-bottom: 10px;
+    padding: 0 0 0 10px;
   }
   
 
@@ -84,15 +83,21 @@
     margin-right: 4%;
   }
   
-  .course-button:hover {
-    border-bottom: 3px solid #17616E;
-  }
-  
-  .course-button:active {
-    border-bottom: 3px solid #17616E; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transform: translateY(2px); 
-  }
+.course-button.active {
+  border-bottom: 3px solid #17616E; 
+  background-color: none; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.course-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.course-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
   
  /* Container do curso */
 .course-container {
@@ -100,13 +105,13 @@
     border: 1px solid #17616E;
     border-radius: 20px;
     background-color: #ffffff;
-    padding: 15px 20px 0 10px; 
+    padding: 20px 0 0 30px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease; 
   }
   
   .course-container:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
   }
   
   /* Estilo do cabeçalho do curso */
@@ -135,7 +140,7 @@
     font-size: 1em;
     align-self: flex-end;
     color: #E15C31;
-    padding-left: 10px;
+    padding: 0 40px 5px 40px;
   }
   
 
@@ -161,6 +166,7 @@
     text-decoration: none;
     font-weight: 500;
     font-family: dm sans;
+    padding-right: 50px;
   }
   
   .view-more:hover {

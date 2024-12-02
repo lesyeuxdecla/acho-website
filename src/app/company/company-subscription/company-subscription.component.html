@@ -24,28 +24,47 @@
       </div>
     </div>
 
+
     <div class="button-container">
-        <button class="course-button" (click)="toggleCourse()">
-          Por Cursos
-        </button>
-        <button class="course-button">
-          Últimas Inscrições
-        </button>
+      <button 
+        class="course-button" 
+        [class.active]="isCourseActive" 
+        (click)="toggleCourse()">
+        Por Cursos
+      </button>
+      <button 
+        class="course-button" 
+        [class.active]="isInscricoesActive" 
+        (click)="toggleInscricoes()">
+        Últimas Inscrições
+      </button>
+    </div>
+    
+    
+    <!-- Container de Cursos -->
+    <div class="course-container" *ngIf="isCourseActive">
+      <div class="course-header" (click)="toggleCourse()">
+        <h3 class="azul">Centro de Treinamento Remo</h3>
+        <p>Centro de Treinamento Infanto-Juvenil</p>
+        <span class="icon">{{ isExpanded ? '▲' : '▼' }}</span>
       </div>
-      <div class="course-container">
-        <div class="course-header" (click)="toggleCourse()">
-          <h3 class="azul">Centro de Treinamento Remo</h3>
-          <p>Centro de Treinamento Infanto-Juvenil</p>
-          <span class="icon">{{ isExpanded ? '▲' : '▼' }}</span>
-        </div>
-      
-        <!-- Lista de inscritos que aparece ou desaparece ao clicar -->
-        <ul class="student-list" *ngIf="isExpanded">
-          <li *ngFor="let student of students">
-            {{ student.name }}
-            <a href="#" class="view-more">Ver mais</a>
-          </li>
-        </ul>
-      </div>
-      
+    
+      <!-- Lista de inscritos (aparece ao clicar no cabeçalho) -->
+      <ul class="student-list" *ngIf="isExpanded">
+        <li *ngFor="let student of students">
+          {{ student.name }}
+          <a href="#" class="view-more">Ver mais</a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Container de Últimas Inscrições -->
+    <div class="course-container" *ngIf="isInscricoesActive">
+      <ul class="student-list" *ngIf="isExpandedInscricoes">
+        <li *ngFor="let student of students">
+          {{ student.name }}
+          <a href="#" class="view-more">Ver mais</a>
+        </li>
+      </ul>
+    </div>
     

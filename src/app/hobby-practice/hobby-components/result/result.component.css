@@ -98,6 +98,7 @@
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: dm sans;
 }
 
 .card-button:hover {

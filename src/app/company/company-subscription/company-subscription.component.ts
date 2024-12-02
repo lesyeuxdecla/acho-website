@@ -9,16 +9,38 @@ import { Component } from '@angular/core';
   styleUrl: './company-subscription.component.css'
 })
 export class CompanySubscriptionComponent {
-  isExpanded = false;
-  students = [
-    { name: 'Carina da Silva' },
-    { name: 'Gustavo Andrade' },
-    { name: 'Jorge Pinheiros Santos' },
-    { name: 'Eduardo Silva Pereira' }
-  ];
+    isCourseActive = true; 
+    isInscricoesActive = false;  
+    
+  
+    isExpanded = false; 
+    isExpandedInscricoes = false;
+  
+   
+    students = [
+      { name: 'Carina da Silva' },
+      { name: 'Gustavo Andrade' },
+      { name: 'Jorge Pinheiros Santos' },
+      { name: 'Eduardo Silva Pereira' }
+    ];
+  
+    
+    toggleCourse() {
+      this.isCourseActive = true;
+      this.isInscricoesActive = false;
+  
+      
+      this.isExpanded = !this.isExpanded;
+      this.isExpandedInscricoes = false;
+    }
+  
+    toggleInscricoes() {
 
-  // Alternar visibilidade da lista
-  toggleCourse() {
-    this.isExpanded = !this.isExpanded;
+      this.isInscricoesActive = true;
+      this.isCourseActive = false;
+  
+      this.isExpandedInscricoes = !this.isExpandedInscricoes;
+      
+      this.isExpanded = false;
+    }
   }
-}

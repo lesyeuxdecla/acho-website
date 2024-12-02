@@ -13,12 +13,13 @@ import { filter } from 'rxjs';
 
 export class SidebarComponent implements OnInit {
   selectedButton: string = '';
+  sidebarVisible: boolean = false;
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {
+    this.sidebarVisible = false; 
     this.updateSelectedButton();
-
 
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
@@ -27,7 +28,7 @@ export class SidebarComponent implements OnInit {
       });
   }
 
-  
+
   updateSelectedButton() {
     const currentRoute = this.router.url;
 
@@ -54,5 +55,16 @@ export class SidebarComponent implements OnInit {
   logout(): void {
     this.router.navigate(['/home']);
   }
+
+  toggleSidebar(): void {
+    this.sidebarVisible = !this.sidebarVisible;
+    const sidebarElement = document.querySelector('.retangulo');
+    if (this.sidebarVisible) {
+      sidebarElement?.classList.remove('hidden');
+    } else {
+      sidebarElement?.classList.add('hidden');
+    }
+  }
+
 }
 
