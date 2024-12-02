@@ -1,9 +1,9 @@
-<app-navbar></app-navbar>
+<app-navgreen></app-navgreen> 
 <app-login-dashboard></app-login-dashboard>
 
 <section>
-<div class="login-card">
-    <h1>Log in</h1>
+  <div class="login-card">
+    <h1>Sign Up</h1>
     <form>
       <div class="input-group">
         <span class="material-icons">email</span>
@@ -13,8 +13,11 @@
         <span class="material-icons">lock</span>
         <input type="password" placeholder="senha" required />
       </div>
-      <a href="#" class="forgot-password">Esqueceu sua senha?</a>
-      <button type="submit" class="login-button">Entrar</button>
+      <div class="input-group">
+        <span class="material-icons">lock</span>
+        <input type="password" placeholder="confirmar senha" required />
+      </div>
+      <button type="submit" class="login-button">Cadastre-se</button>
     </form>
     <div class="divider">
       <span>OU</span>
@@ -28,7 +31,7 @@
       </button>
     </div>
     <p class="signup">
-      Não tem uma conta? <a href="#" (click)="navegarParaCadastro()">Cadastre-se</a>
+      Já tem uma conta? <a href="#" (click)="navegarParaLogin()">Entre</a>
     </p>
   </div>
 </section>

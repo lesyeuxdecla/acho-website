@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 export class NavbarComponent {
   currentScreenSize: string = 'desktop';  // Estado inicial
   sidebarOpen: boolean = false;
+  searchActive: boolean = false;
+  searchQuery: string = '';
 
   constructor(private breakpointObserver: BreakpointObserver) {
     this.observeScreenSize();
@@ -51,18 +53,9 @@ export class NavbarComponent {
     }
   }
 
-  isModalOpen: boolean = false;
-  searchQuery: string = '';
-  suggestions: string[] = ['FUTEBOL', 'CERÂMICA', 'DANÇA', 'MÚSICA'];
-
-  openModal(event: Event): void {
-    event.preventDefault();
-    this.isModalOpen = true;
+  toggleSearch(): void {
+    this.searchActive = !this.searchActive;
   }
 
-  closeModal(event: Event): void {
-    event.preventDefault();
-    this.isModalOpen = false;
-  }
 
 }

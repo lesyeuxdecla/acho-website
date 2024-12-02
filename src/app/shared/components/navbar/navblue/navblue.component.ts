@@ -2,18 +2,23 @@ import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-navblue',
   standalone: true,
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule, FormsModule],
   templateUrl: './navblue.component.html',
   styleUrl: './navblue.component.css'
 })
 
 export class NavblueComponent {
   @Input() categoryName: string = '';
-  @Input() categoryImage: string = ''; 
+  @Input() categoryImage: string = '';
+  
+  
+  searchActive: boolean = false;
+  searchQuery: string = '';
 
 currentScreenSize: string = 'desktop';  
 sidebarOpen: boolean = false;
@@ -45,6 +50,10 @@ observeScreenSize() {
 
 toggleSidebar() {
   this.sidebarOpen = !this.sidebarOpen;
+}
+
+toggleSearch(): void {
+  this.searchActive = !this.searchActive;
 }
 }
 

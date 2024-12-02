@@ -1,7 +1,7 @@
 <header [ngClass]="currentScreenSize">
     <div class="logo">
       <a [routerLink]="['/home']">
-        <img src="images/logo1.png">
+        <img src="images/logoverde.png">
       </a>
     </div>
   
@@ -25,17 +25,25 @@
           <nav>
             <a [routerLink]="['/home']" class="sidebar-link">Hobbies</a>
             <a [routerLink]="['/quizdash']" class="sidebar-link">Quiz</a>
-            <a [routerLink]="['/home']" class="sidebar-link">Contate-nos</a>
+            <a [routerLink]="['/contate']" class="sidebar-link">Contate-nos</a>
           </nav>
         </div>
       </div>
   
 
       <div class="user-actions">
-
+        <div class="search-wrapper" [class.active]="searchActive">
+          <i class="material-icons search-icon" (click)="toggleSearch()">search</i>
+          <input
+            *ngIf="searchActive"
+            type="text"
+            class="search-input"
+            [(ngModel)]="searchQuery"
+            placeholder="Pesquise aqui..."
+          />
+        </div>
         <a [routerLink]="['/profile']" class="icon-link person-link"><i class="material-icons">person</i></a>
       </div>
-  
 
       <button class="menu-actions" *ngIf="currentScreenSize === 'mobile'" (click)="toggleSidebar()">
         <a class="menu-link"><i class="material-icons">menu</i></a>

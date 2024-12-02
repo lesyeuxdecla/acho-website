@@ -75,7 +75,7 @@ header {
   }
   
   .menu-actions a {
-    color: #043B64;
+    color: #E15C31;
     display: flex;
     text-decoration: none;
   }
@@ -106,7 +106,7 @@ header {
   .close-btn {
     background-color: transparent;
     border: none;
-    color: #043B64;
+    color: #E15C31;
     justify-content: flex-end;
   }
   
@@ -115,12 +115,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    width: 100%; 
+    width: 100%;
   }
   
   .sidebar_logo img {
     max-width: 80px;
     height: auto;
+
   }
   
   .sidebar-link {
@@ -131,24 +132,50 @@ header {
     padding: 0 0 10px 0;
   }
 
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40%;
+  
+  .search-wrapper {
     display: flex;
-    z-index: 10;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 36px;
+
   }
   
-  .search-container {
-    background-color: #FFFFFF;
+  .search-wrapper.active {
+    width: 250px;
+    border: 1px solid #E15C31;
+  }
+  
+  .search-wrapper .search-icon {
+    padding: 8px;
+    color: #E15C31;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .search-wrapper.active .search-icon {
+    transform: rotate(90deg);
+  }
+  
+  .search-wrapper .search-input {
+    flex-grow: 1;
     border: none;
-    padding: 40px;
-    width: 100%;
-    max-width: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    font-family: "dm sans";
+    color: #403939;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .search-wrapper.active .search-input {
+    opacity: 1;
+    visibility: visible;
   }
   
   .header {
@@ -157,60 +184,6 @@ header {
     align-items: center;
   }
   
-  .logo-search {
-    height: 50px;
-    padding-left: 860px;
-  }
-  
-  .close-btn {
-    color: #E15C31;
-    font-size: 44px;
-    text-decoration: none;
-    padding-right: 120px;
-  }
-  
-  .search-box {
-    display: flex;
-    align-items: center;
-    border: 1px solid #E15C31;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 120px;
-    margin-right: 120px;
-  }
-  
-  .search-box i {
-    color: #E15C31;
-  }
-  
-  .search-box input {
-    border: none;
-    outline: none;
-    flex-grow: 1;
-    padding: 0 10px;
-  }
-  
-  .suggestions {
-    margin-top: 20px;
-    padding-left: 130px;
-  }
-  
-  .suggestions p {
-    color: #E15C31;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .suggestions ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .suggestions li {
-    color: #403939;
-    margin-bottom: 5px;
-  }
   
   .user-actions {
     display: flex;
@@ -238,7 +211,6 @@ header {
 
 
 
-
   
   /* responsividade */
   @media screen and (max-width: 1024px) {
@@ -260,18 +232,16 @@ header {
     .header {
       align-items: center; 
     }
-  
-    .logo-search {
-      height: 40px; 
-      padding-left: 450px; 
-    }
-  
-    .close-btn {
-      font-size: 36px; /* Diminui o tamanho do botão de fechar */
-      padding-right: 60px; /* Ajusta o padding para menos espaço */
-    }
 
+    .search-wrapper.active {
+      width: 200px; 
+    }
+  
+    .search-wrapper .search-input {
+      font-size: 14px; 
+    }
   }
+  
   
   @media screen and (max-width: 480px) {
     header {
@@ -294,6 +264,20 @@ header {
     .material-icons {
       font-size: 22px;
     }
+
+    .search-wrapper {
+      width: 32px; 
+    }
+  
+    .search-wrapper.active {
+      width: 160px; 
+    }
+  
+    .search-wrapper .search-input {
+      padding: 6px; 
+      font-size: 12px; 
+    }
+
   }
   
   @media screen and (max-width: 380px) {
@@ -312,6 +296,19 @@ header {
   
     .material-icons {
       font-size: 20px;
+    }
+
+    .search-wrapper {
+      width: 30px; 
+    }
+  
+    .search-wrapper.active {
+      width: 140px; 
+    }
+  
+    .search-wrapper .search-input {
+      padding: 6px;
+      font-size: 12px; 
     }
   }
   
@@ -332,4 +329,18 @@ header {
     .material-icons {
       font-size: 16px;
     }
+
+    .search-wrapper {
+      width: 28px; 
+    }
+  
+    .search-wrapper.active {
+      width: 110px; 
+    }
+  
+    .search-wrapper .search-input {
+      padding: 4px;
+      font-size: 9px; 
+    }
+
   }

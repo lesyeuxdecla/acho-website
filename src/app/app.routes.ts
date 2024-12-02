@@ -37,6 +37,11 @@ import { FormsComponent } from './theforms/forms/forms.component';
 import { FormsSchoolComponent } from './theforms/forms-school/forms-school.component';
 import { FormsSubscriptionComponent } from './theforms/forms-subscription/forms-subscription.component';
 import { ContactNavComponent } from './shared/contact-nav/contact-nav.component';
+import { CompanyLoginComponent } from './auth/company-login/company-login.component';
+import { CompanySignupComponent } from './auth/company-signup/company-signup.component';
+
+
+
 
 
 
@@ -62,6 +67,9 @@ export const routes: Routes = [
 
   // company
   { path: 'company', loadChildren: () => import('./company/company.module').then(m => m.CompanyModule) },
+  { path: 'company-login', component: CompanyLoginComponent },
+  { path: 'company-sign-up', component: CompanySignupComponent},
+
 
   // football
  

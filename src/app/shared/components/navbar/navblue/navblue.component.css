@@ -158,7 +158,7 @@ nav {
 }
 
 .menu-actions a {
-  color: #043B64;
+  color: white;
   display: flex;
   text-decoration: none;
 }
@@ -189,7 +189,7 @@ nav {
 .close-btn {
   background-color: transparent;
   border: none;
-  color: #043B64;
+  color: #E15C31;
   justify-content: flex-end;
 }
 
@@ -214,6 +214,57 @@ nav {
   padding: 0 0 10px 0;
 }
 
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 36px;
+  background-color: none;
+}
+
+.search-wrapper.active {
+  width: 250px;
+  border: 1px solid #E15C31;
+  background-color: none;
+}
+
+.search-wrapper .search-icon {
+  padding: 8px;
+  color: #E15C31;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.search-wrapper.active .search-icon {
+  transform: rotate(90deg);
+}
+
+.search-wrapper .search-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+  font-family: "dm sans";
+  color: white;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.search-wrapper.active .search-input {
+  pointer-events: auto;
+  background-color: #043B64;
+}
+
+.search-wrapper .search-input::placeholder {
+  color: #E15C31;
+}
+
+
 /* responsividade */
 @media screen and (max-width: 1024px) {
   .logo img {
@@ -230,7 +281,20 @@ nav {
   .material-icons {
     font-size: 20px;
   }
+
+  .header {
+    align-items: center; 
+  }
+
+  .search-wrapper.active {
+    width: 200px; 
+  }
+
+  .search-wrapper .search-input {
+    font-size: 14px; 
+  }
 }
+
 
 @media screen and (max-width: 480px) {
   header {
@@ -253,7 +317,21 @@ nav {
   .material-icons {
     font-size: 22px;
   }
+
+  .search-wrapper {
+    width: 32px; 
+  }
+
+  .search-wrapper.active {
+    width: 160px; 
+  }
+
+  .search-wrapper .search-input {
+    padding: 6px; 
+    font-size: 12px; 
+  }
 }
+
 
 @media screen and (max-width: 380px) {
   header {
@@ -272,7 +350,21 @@ nav {
   .material-icons {
     font-size: 20px;
   }
+
+  .search-wrapper {
+    width: 30px; 
+  }
+
+  .search-wrapper.active {
+    width: 140px; 
+  }
+
+  .search-wrapper .search-input {
+    padding: 6px;
+    font-size: 12px; 
+  }
 }
+
 
 @media screen and (max-width: 320px) {
   header {
@@ -291,4 +383,18 @@ nav {
   .material-icons {
     font-size: 16px;
   }
+
+  .search-wrapper {
+    width: 28px; 
+  }
+
+  .search-wrapper.active {
+    width: 110px; 
+  }
+
+  .search-wrapper .search-input {
+    padding: 4px;
+    font-size: 9px; 
+  }
+
 }

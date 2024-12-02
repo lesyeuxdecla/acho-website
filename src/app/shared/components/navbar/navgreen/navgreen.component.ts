@@ -15,6 +15,8 @@ export class NavgreenComponent {
 
   currentScreenSize: string = 'desktop';  // Estado inicial
   sidebarOpen: boolean = false;
+  searchActive: boolean = false;
+  searchQuery: string = '';
 
   constructor(private breakpointObserver: BreakpointObserver) {
     this.observeScreenSize();
@@ -44,5 +46,10 @@ export class NavgreenComponent {
   toggleSidebar() {
     this.sidebarOpen = !this.sidebarOpen;
   }
+
+  toggleSearch(): void {
+    this.searchActive = !this.searchActive;
+  }
+
 
 }
