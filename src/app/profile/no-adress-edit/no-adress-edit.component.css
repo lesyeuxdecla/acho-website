@@ -1,66 +1,279 @@
+section {
+  padding: 32px 164px 0 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  justify-content: flex-start;
+  padding-bottom: 16px;
+}
+
+.header span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #403939;
+}
+
+.header svg {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+
 .centraliza {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 8px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.linha {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  margin: 0;
+  padding-bottom: 6px;
+  color: #E15C31;
+}
+
+input {
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #3f3b3b66;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: none;
+  font-family: dm sans;
+}
+
+input:focus {
+  outline: none;
+  font-family: dm sans;
+  color: #403939;
+}
+
+::placeholder {
+  color: #a59f9f;
+}
+
+.campo-cep {
+  width: 150px;
+}
+
+.campo-estado {
+  width: 150px;
+}
+
+.campo-bairro {
+  width: 150px;
+}
+
+.campo-cidade {
+  width: 150px;
+}
+
+.campo-rua {
+  width: 320px;
+}
+
+.campo-numero {
+  width: 80px;
+}
+
+.campo-complemento {
+  width: 320px;
+}
+
+.botao {
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  padding-top: 40px;
+}
+
+.salvar {
+  padding: 12px 47px;
+  background-color: #043B64;
+  color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
+  font-weight: 500;
+  font-size: 14px;
+  font-family: dm sans;
+}
+
+.salvar:hover {
+  background-color: #E15C31;
+  color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+
+.salvar:not(:hover) {
+  transition: background-color 0.5s ease;
+}
+
+/* responsividade */
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 32px 0 0 12px;
   }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 32px 66px 0 40px;
   }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    justify-content: flex-start;
-  }
-  
+
   .header span {
     font-size: 16px;
-    font-weight: 500;
     color: #403939;
   }
   
   .header svg {
-    cursor: pointer;
+    height: 34px;
+    width: 34px;
   }
-  
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 100%;
-  }
-  
-  .linha {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  
-  .campo {
-    display: flex;
-    flex-direction: column;
-    min-width: 100px;
-  }
-  
-  .campo h4 {
-    font-size: 14px;
-    margin-bottom: 10px;
-    font-weight: 500;
-    color: #e15c31;
 
+  .linha3 {
+    gap: 0;
+  }
+
+  .campo-numero {
+    padding-top: 8px;
+  }
+
+  h4 {
+    font-size: 14px;
+    padding-bottom: 6px;
+  }
+
+  input {
+    height: 32px;
+    padding-left: 8px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+
+  .botao {
+    justify-content: right;
+    padding-top: 32px;
+  }
+
+  .salvar {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 24px 0 0;
+  }
+
+  .header span {
+    font-size: 16px;
+    color: #403939;
   }
   
+  .header svg {
+    height: 34px;
+    width: 34px;
+  }
+
+  h4 {
+    padding-bottom: 6px;
+    font-size: 14px;
+  }
+
+  input {
+    height: 32px;
+  }
+
+  .botao {
+    justify-content: right;
+    padding-top: 32px;
+    padding-right: 10px;
+  }
+
+  .salvar {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding-right: 40px;
+  }
+
+  .formulario {
+    gap: 6px;
+  }
+
+  .linha {
+    gap: 8px;
+  }
+
+  .header span {
+    font-size: 15px;
+    color: #403939;
+  }
+  
+  .header svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  h4 {
+    padding-bottom: 4px;
+    font-size: 13px;
+  }
+
+  input {
+    height: 32px;
+    font-size: 13px;
+    border-radius: 12px;
+  }
+
   .campo-cep {
     width: 150px;
   }
   
   .campo-estado {
-    width: 150px;
+    width: 140px;
   }
   
   .campo-bairro {
@@ -68,103 +281,109 @@
   }
   
   .campo-cidade {
-    width: 150px;
+    width: 140px;
   }
   
   .campo-rua {
-    width: 320px;
+    width: 300px;
   }
   
   .campo-numero {
-    width: 100px;
+    width: 80px;
+    padding-top: 0px;
   }
   
   .campo-complemento {
-    width: 320px;
+    width: 300px;
   }
-  
-  input {
+
+  .botao {
+    justify-content: right;
+    padding-top: 32px;
+    padding-right: 10px;
+    }
+
+  .salvar {
     height: 40px;
-    padding: 0 10px;
-    border: 1px solid #40393966;
-    border-radius: 12px;
-    font-size: 15px;
-    font-family: dm sans;
-    background-color: none;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 13px;
   }
-  
-  input:focus {
-    outline: none;
-    border-color: #e15c31;
+}
+
+@media screen and (max-width: 320px) {
+  section {
+    padding-right: 40px;
   }
-  
-  input::placeholder {
+
+  .formulario {
+    gap: 6px;
+  }
+
+  .linha {
+    gap: 8px;
+  }
+
+  .header span {
+    font-size: 14px;
     color: #403939;
   }
   
-  .botao-container {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 30px;
+  .header svg {
+    height: 28px;
+    width: 28px;
+  }
+
+  h4 {
+    padding-bottom: 2px;
+    font-size: 12px;
+  }
+
+  input {
+    height: 32px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
+  .campo-cep {
+    width: 120px;
   }
   
+  .campo-estado {
+    width: 116px;
+  }
+  
+  .campo-bairro {
+    width: 120px;
+  }
+  
+  .campo-cidade {
+    width: 116px;
+  }
+  
+  .campo-rua {
+    width: 244px;
+  }
+  
+  .campo-numero {
+    width: 80px;
+    padding-top: 0px;
+  }
+  
+  .campo-complemento {
+    width: 244px;
+  }
+
   .botao {
-    background-color: #043b64;
-    color: #ffffff;
-    border: none;
+    justify-content: right;
+    padding-top: 20px;
+    padding-right: 0;
+  }
+
+  .salvar {
+    height: 40px;
+    width: 100px;
     border-radius: 20px;
-    padding: 15px 30px;
-    font-size: 14px;
-    font-family: dm sans;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 12px;
   }
-  
-  .botao:hover {
-    background-color: #e15c31;
-  }
-  
-
-  @media (max-width: 768px) {
-    .container {
-      padding: 15px;
-    }
-  
-    .campo-cep,
-    .campo-estado,
-    .campo-bairro,
-    .campo-cidade,
-    .campo-rua,
-    .campo-numero,
-    .campo-complemento {
-      width: 100%;
-    }
-  
-    .botao-container {
-      justify-content: center;
-    }
-  
-    .botao {
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-    }
-  }
-  
-
-  @media (max-width: 480px) {
-    .header span {
-      font-size: 16px;
-    }
-  
-    .campo h4 {
-      font-size: 12px;
-    }
-  
-    .botao {
-      padding: 10px 30px;
-      font-size: 14px;
-    }
-  }
-  
+}

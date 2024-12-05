@@ -5,7 +5,7 @@ import { Router, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-action-bar',
   standalone: true,
-  imports: [ CommonModule, RouterModule ],
+  imports: [ CommonModule, RouterModule],
   templateUrl: './action-bar.component.html',
   styleUrl: './action-bar.component.css'
 })

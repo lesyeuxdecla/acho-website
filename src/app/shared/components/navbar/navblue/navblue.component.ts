@@ -15,13 +15,17 @@ import { FormsModule } from '@angular/forms';
 export class NavblueComponent {
   @Input() categoryName: string = '';
   @Input() categoryImage: string = '';
-  
-  
-  searchActive: boolean = false;
-  searchQuery: string = '';
+  @Input() description: string = '';
+  @Input() minInvestment: string = '';
 
-currentScreenSize: string = 'desktop';  
-sidebarOpen: boolean = false;
+  
+    searchActive: boolean = false;
+    searchQuery: string = '';
+
+  
+  
+  currentScreenSize: string = 'desktop';  
+  sidebarOpen: boolean = false;
 
 constructor(private breakpointObserver: BreakpointObserver) {
   this.observeScreenSize();
@@ -47,6 +51,8 @@ observeScreenSize() {
     }
   });
 }
+
+
 
 toggleSidebar() {
   this.sidebarOpen = !this.sidebarOpen;

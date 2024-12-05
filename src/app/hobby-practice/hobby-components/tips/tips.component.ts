@@ -16,23 +16,22 @@ import { FormsModule } from '@angular/forms';
 export class TipsComponent {
   tips: string[] = [
     "Utilize exercícios de 'recepção e condução', onde você recebe a bola e imediatamente a conduz em diferentes direções para simular situações de jogo. Isso ajudará a melhorar sua coordenação e o tempo de reação.",
-    "A defesa eficaz é uma combinação de posicionamento, leitura de jogo e habilidades de desarme. Para melhorar sua defesa, comece com exercícios de posicionamento. Trabalhe em manter uma posição adequada entre o atacante e o gol, garantindo que você esteja sempre entre o adversário e a bola.",
+    "Uma defesa eficaz é uma combinação de posicionamento, leitura de jogo, habilidades de desarme e tomada de decisão rápida. Para melhorar sua defesa, comece com exercícios focados no posicionamento. Aprenda a manter uma postura equilibrada, com os joelhos levemente flexionados e o peso distribuído entre os pés, o que permitirá reagir rapidamente aos movimentos do adversário. Trabalhe para se posicionar corretamente entre o atacante e o gol, garantindo que você esteja sempre alinhado para interceptar passes ou bloquear chutes.",
     "Para melhorar a precisão dos seus passes, pratique usar o lado interno do pé. Mantenha a perna de apoio levemente flexionada e aponte para o alvo enquanto executa o passe. Trabalhe em curtos passes com um companheiro ou contra uma parede, concentrando-se em manter o contato suave e direcionado na bola.",
-    "Para aprimorar seu drible, comece com exercícios específicos que ajudam a desenvolver o controle da bola e a agilidade. Um ótimo exercício é o 'drible em zigue-zague.'",
+    "Para aprimorar seu drible, use exercícios específicos que ajudam a desenvolver o controle da bola e a agilidade. Recomendo 'drible em zigue-zague.'",
     "Para melhorar a finalização, mire no gol e pratique diferentes chutes, como com o peito do pé para potência e com a parte interna para precisão.",
-    "Use tênis adequados para o tipo de campo em que você joga – grama, campo sintético, etc.",
-    "No futebol, a velocidade faz a diferença. Faça treinos focados em sprints de curta distância e aceleração, simulando o momento em que você precisa correr para atacar ou defender rapidamente."
+    "Use tênis adequados para o tipo de campo em que você joga seja este grama, campo sintético, salões, enfim, é de grande ajuda.",
+    "No futebol, a velocidade faz a diferença. Faça treinos focados em sprints de curta distância e aceleração."
   ];
 
   newTip: string = '';
   isInputActive: boolean = false;
 
-  // Ativa o campo de texto para digitar uma nova dica
+
   activateInput() {
     this.isInputActive = true;
   }
 
-  // Submete a nova dica
   submitTip() {
     if (this.newTip.trim()) {
       this.tips.push(this.newTip.trim());

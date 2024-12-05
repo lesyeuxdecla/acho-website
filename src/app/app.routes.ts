@@ -3,7 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 
+
 import { FootballPageComponent } from './hobby-practice/football/football-page/football-page.component';
+import { ReadingPageComponent } from './hobby-practice/reading/reading-page/reading-page.component';
+import { DancePageComponent } from './hobby-practice/dance/dance-page/dance-page.component';
+
+
 import { GoogleMapsModule } from '@angular/google-maps'; 
 
 import { CategoryComponent } from './homepage/category/category.component';
@@ -40,6 +45,21 @@ import { ContactNavComponent } from './shared/contact-nav/contact-nav.component'
 import { CompanyLoginComponent } from './auth/company-login/company-login.component';
 import { CompanySignupComponent } from './auth/company-signup/company-signup.component';
 
+import { DancePracticeYourHobbyComponent } from './hobby-practice/dance/dance-hobby-components/dance-practice-your-hobby/dance-practice-your-hobby.component';
+import { DanceOriginComponent } from './hobby-practice/dance/dance-hobby-components/dance-origin/dance-origin.component';
+import { DanceFundamentalsComponent } from './hobby-practice/dance/dance-hobby-components/dance-fundamentals/dance-fundamentals.component';
+import { DanceBenefitsComponent } from './hobby-practice/dance/dance-hobby-components/dance-benefits/dance-benefits.component';
+import { DanceMaterialsComponent } from './hobby-practice/dance/dance-hobby-components/dance-materials/dance-materials.component';
+import { DanceTipsComponent } from './hobby-practice/dance/dance-hobby-components/dance-tips/dance-tips.component';
+import { DanceEventsComponent } from './hobby-practice/dance/dance-hobby-components/dance-events/dance-events.component';
+
+import { ReadingPracticeYourHobbyComponent } from './hobby-practice/reading/reading-practice-your-hobby/reading-practice-your-hobby.component';
+import { ReadingOriginComponent } from './hobby-practice/reading/reading-origin/reading-origin.component';
+import { ReadingFundamentalsComponent } from './hobby-practice/reading/reading-fundamentals/reading-fundamentals.component';
+import { ReadingBenefitsComponent } from './hobby-practice/reading/reading-benefits/reading-benefits.component';
+import { ReadingMaterialsComponent } from './hobby-practice/reading/reading-materials/reading-materials.component';
+import { ReadingTipsComponent } from './hobby-practice/reading/reading-tips/reading-tips.component';
+import { ReadingEventsComponent } from './hobby-practice/reading/reading-events/reading-events.component';
 
 
 
@@ -74,6 +94,10 @@ export const routes: Routes = [
   // football
  
   { path: 'football', component: FootballPageComponent},
+  {  path: 'dance', component: DancePageComponent },
+  {  path: 'reading', component: ReadingPageComponent },
+
+
 
   // category
  
@@ -97,6 +121,27 @@ export const routes: Routes = [
   { path: 'materials', component: MaterialsComponent },
   { path: 'tips', component: TipsComponent},
   { path: 'events', component: EventsComponent},
+
+
+   // dance hobby-practice
+
+   { path: 'dance-practiceyourhobby', component: DancePracticeYourHobbyComponent },
+   { path: 'dance-origin', component: DanceOriginComponent},
+   { path: 'dance-fundamentals', component: DanceFundamentalsComponent },
+   { path: 'dance-benefits', component: DanceBenefitsComponent},
+   { path: 'dance-materials', component: DanceMaterialsComponent},
+   { path: 'dance-tips', component: DanceTipsComponent},
+   { path: 'dance-events', component: DanceEventsComponent},
+
+   // reading hobby-practice
+
+   { path: 'reading-practiceyourhobby', component: ReadingPracticeYourHobbyComponent },
+   { path: 'reading-origin', component: ReadingOriginComponent},
+   { path: 'reading-fundamentals', component: ReadingFundamentalsComponent },
+   { path: 'reading-benefits', component: ReadingBenefitsComponent},
+   { path: 'reading-materials', component: ReadingMaterialsComponent},
+   { path: 'reading-tips', component: ReadingTipsComponent},
+   { path: 'reading-events', component: ReadingEventsComponent},
 
 // practice your hobby
 
