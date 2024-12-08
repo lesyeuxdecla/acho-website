@@ -228,4 +228,6 @@
 <div class="d-flex justify-content-end mb-4">
     <button class="btn btn-custom" type="submit" [disabled]="formulario.invalid">Enviar</button>
   </div>
+
+  <app-pop-up-subscription [isVisible]="mostrarModal" (close)="fecharModal()"></app-pop-up-subscription>
   

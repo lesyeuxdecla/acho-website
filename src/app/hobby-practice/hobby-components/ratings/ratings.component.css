@@ -57,6 +57,7 @@
     border: 1px solid #dfd2d2;
     margin: 10px 0;
     border-radius: 30px;
+    max-width: 1410px;
 }
 
 .submit-rating {

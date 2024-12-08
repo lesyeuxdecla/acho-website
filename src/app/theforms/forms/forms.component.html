@@ -116,5 +116,9 @@
         <button class="btn btn-custom" type="submit" [disabled]="formulario.invalid">Enviar</button>
       </div>
       
+      <app-pop-up [isVisible]="mostrarModal" (close)="fecharModal()"></app-pop-up>
+      
+
+  
     </form>
   </div>

@@ -210,6 +210,9 @@ option:hover {
     transition: background-color 0.5s ease;
 }
 
+
+
+
 @media screen and (max-width: 1024px) {
     section {
         padding: 32px 0 0 12px;

@@ -31,27 +31,30 @@
 .label-custom {
     display: block;
     font-weight: 500;
-    font-size: 1rem; 
+    font-size: 16px; 
     color: #403939;
     padding-bottom: 8px; 
+    font-family: dm sans;
 }
 
 .label-custom-serv {
     display: block;
-    font-weight: bold;
-    color: #E15C31;
+    font-weight: 500;
+    color: #403939;
     padding-bottom: 5px;
+    font-family: dm sans;
 }
 
 .input,
 textarea {
     width: 100%;
     padding: 12px;
-    font-size: 1.1rem;
-    color: #E15C31;
+    font-size: 16px;
+    color: #403939;
     border-radius: 10px;
     box-sizing: border-box;
     min-height: 50px;
+    font-family: dm sans;
 }
 
 .input:focus,
@@ -70,6 +73,7 @@ textarea:focus {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: dm sans;
 }
 
 .btn-custom:disabled {

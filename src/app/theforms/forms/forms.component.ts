@@ -1,19 +1,22 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NavgreenComponent } from "../../shared/components/navbar/navgreen/navgreen.component";
 import { Router } from '@angular/router';
-Router
+import { PopUpComponent } from '../pop-up/pop-up.component';
+
+
 
 @Component({
   selector: 'app-forms',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, NavgreenComponent],
+  imports: [ReactiveFormsModule, CommonModule, NavgreenComponent, PopUpComponent],
   templateUrl: './forms.component.html',
   styleUrl: './forms.component.css'
 })
 export class FormsComponent {
   formulario: FormGroup;
+  mostrarModal: boolean = false; 
 
   constructor(private fb: FormBuilder, private router: Router) {
     this.formulario = this.fb.group({
@@ -42,14 +45,24 @@ export class FormsComponent {
   onSubmit() {
     if (this.formulario.valid) {
       console.log('Dados do formulário:', this.formulario.value);
-      alert('Formulário enviado com sucesso!');
+      this.mostrarModal = true;  
       this.formulario.reset();
     } else {
       alert('Por favor, preencha os campos obrigatórios!');
     }
   }
 
+  fecharModal() {
+    this.mostrarModal = false;
+  }
+
+  redirecionarParaCompany() {
+    this.router.navigate(['/company']);
+  }
+
   voltarParaContateNav() {
     this.router.navigate(['../contate'], { relativeTo: this.router.routerState.root.firstChild }); 
   }
+
+
 }

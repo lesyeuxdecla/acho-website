@@ -120,10 +120,11 @@ input:focus {
 }
 
 .salvar {
-  padding: 12px 47px;
+  height: 40px;
+  width: 100px;
   background-color: #043B64;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
   box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.20);
   font-weight: 500;

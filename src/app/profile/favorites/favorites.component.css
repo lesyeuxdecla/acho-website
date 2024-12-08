@@ -31,8 +31,7 @@ section {
 }
 
 .card-image {
-  padding-top: 5px;
-  width: 95%;
+  width: 100%;
   height: 140px;
   object-fit: fill;
   border-radius: 20px 20px 20px 20px;
@@ -270,7 +269,6 @@ section {
     font-size: 13px;
   }
 }
-
 
 @media screen and (max-width: 320px) {
   .card-container {

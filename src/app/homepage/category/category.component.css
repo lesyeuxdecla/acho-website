@@ -97,7 +97,7 @@ p {
   top: 30%;
   transform: translateY(-50%);
   z-index: 0; 
-  display: none; 
+  display: none;
 }
 
 .arrow.left {

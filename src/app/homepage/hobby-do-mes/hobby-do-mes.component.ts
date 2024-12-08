@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hobby-do-mes',
@@ -12,7 +13,7 @@ export class HobbyDoMesComponent {
 
   currentScreenSize: string = 'desktop';
 
-  constructor(private breakpointObserver: BreakpointObserver) {
+  constructor(private breakpointObserver: BreakpointObserver, private router: Router) {
     this.observeScreenSize();
   }
 
@@ -36,5 +37,11 @@ export class HobbyDoMesComponent {
         }
       }
     });
+  }
+
+  
+  redirecionarParaDance() {
+    window.scrollTo(0, 0);
+    this.router.navigate(['/dance']);
   }
 }

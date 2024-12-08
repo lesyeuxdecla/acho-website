@@ -12,13 +12,14 @@ import { filter } from 'rxjs';
 })
 export class CompanySidebarComponent implements OnInit {
   selectedButton: string = '';
+  sidebarVisible: boolean = false;
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.updateSelectedButton();
 
-    // Atualiza o botão ativo ao navegar entre rotas
+  
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
@@ -48,5 +49,15 @@ export class CompanySidebarComponent implements OnInit {
 
   logout(): void {
     this.router.navigate(['/home']);
+  }
+
+  toggleSidebar(): void {
+    this.sidebarVisible = !this.sidebarVisible;
+    const sidebarElement = document.querySelector('.retangulo');
+    if (this.sidebarVisible) {
+      sidebarElement?.classList.remove('hidden');
+    } else {
+      sidebarElement?.classList.add('hidden');
+    }
   }
 }
