@@ -22,76 +22,79 @@ interface Question {
 export class QuizquestionComponent {
   questions: Question[] = [
     {
-      question: "1. O que você mais gosta de fazer no seu tempo livre?",
+      question: "1. Se você pudesse passar um dia fazendo qualquer atividade sem se preocupar com tempo ou dinheiro, o que você escolheria?",
       options: [
-        "Praticar esportes",
-        "Aprender algo novo",
-        "Fazer algo criativo",
-        "Relaxar lendo ou assistindo a algo",
+        "Participar de uma aventura ao ar livre, como trilhas ou ciclismo",
+        "Aprender uma nova habilidade, como tocar um instrumento ou fazer artesanato",
+        "Preparar e experimentar pratos e receitas diferentes",
+        "Passar um tempo relaxando com leitura ou assistindo documentários",
       ],
     },
     {
-      question: "2. Quanto tempo você tem disponível por semana para dedicar a um hobby?",
+      question: "2. Quanto tempo você consegue reservar por semana para se dedicar a um hobby, considerando sua rotina diária?",
       options: [
-        "Menos de 1 hora",
-        "1-3 horas",
-        "3-5 horas",
-        "Mais de 5 horas",
+        "Menos de 1 hora – minha rotina é extremamente agitada e só consigo pequenos intervalos",
+        "1-3 horas – consigo ajustar meu tempo para atividades curtas durante a semana",
+        "3-5 horas – tenho uma rotina moderada e consigo separar um tempo razoável para um hobby",
+        "Mais de 5 horas – consigo organizar minha agenda para dedicar bastante tempo a atividades de lazer",
       ],
     },
     {
-      question: "3. Você prefere atividades que desafiam sua criatividade ou sua lógica?",
+      question: "3. Qual tipo de desafio mais te motiva a continuar?",
       options: [
-        "Criatividade",
-        "Lógica",
-        "Um equilíbrio entre os dois",
-        "Nenhum dos dois",
+        "Superar barreiras físicas, como esportes e exercícios",
+        "Resolver mistérios e quebra-cabeças que exigem raciocínio",
+        "Criar algo do zero e ver o resultado final",
+        "Explorar temas profundos e complexos em estudos e pesquisas",
       ],
     },
     {
-      question: "4. Quanto você estaria disposto a investir em um novo hobby?",
+      question: "4. Como você lida com a ideia de investir financeiramente em um novo hobby?",
       options: [
-        "Até R$100",
-        "Entre R$100 e R$500",
-        "Acima de R$500",
-        "Prefiro hobbies que não exijam muito investimento financeiro",
+        "Estou disposto(a) a gastar acima de R$500 em equipamentos de qualidade para ter a melhor experiência possível",
+        "Prefiro começar com um investimento inicial de até R$100 e aumentar conforme meu interesse cresce",
+        "Gosto de encontrar opções sustentáveis e de baixo custo, investindo entre R$100 e R$300 de forma controlada",
+        "Prefiro hobbies que quase não exigem investimento financeiro e pesquiso alternativas gratuitas antes de começar",
       ],
     },
     {
-      question: "5. Você prefere hobbies que possam ser praticados em grupo ou sozinho?",
+      question: "5. Como você se sentiria em participar de atividades com outras pessoas que compartilham dos mesmos interesses?",
       options: [
-        "Em grupo",
-        "Sozinho",
-        "Tanto faz",
+        "Animado(a) para interagir, trocar experiências e aprender em conjunto",
+        "Confortável, mas prefiro que seja em um grupo pequeno e mais íntimo",
+        "Prefiro começar observando e me integrando gradualmente à medida que me sinto à vontade",
+        "Não sou fã de atividades em grupo; gosto mais de hobbies que posso fazer sozinho(a)",
       ],
     },
     {
-      question: "6. Qual das atividades abaixo você acharia mais interessante?",
+      question: "6. Quando você termina uma atividade, o que faz você sentir que aproveitou bem seu tempo?",
       options: [
-        "Pintar ou desenhar",
-        "Aprender programação",
-        "Cozinhar uma nova receita",
-        "Praticar um esporte",
+        "Ver um projeto criativo ganhar vida, como uma obra de arte ou um texto escrito por mim",
+        "Sentir que aprendi ou desenvolvi algo técnico, como novas habilidades em programação ou reparos",
+        "Concluir uma atividade que exigiu tanto criatividade quanto planejamento, como uma sessão de fotografia ou um projeto DIY (faça você mesmo)",
+        "Simplesmente me divertir e relaxar com algo leve, como jogos ou cozinhar uma receita simples",
       ],
     },
     {
-      question: "7. Você gosta de atividades que envolvem movimento físico intenso?",
+      question: "7. Como você prefere usar seu tempo livre em termos de movimento?",
       options: [
-        "Sim, adoro me movimentar",
-        "Prefiro algo mais leve",
-        "Gosto de um equilíbrio",
-        "Prefiro atividades mentais",
+        "Em atividades intensas",
+        "Em atividades moderadas",
+        "Em um equilíbrio entre intenso e moderado",
+        "Em atividades sedentárias",
       ],
     },
     {
-      question: "8. Você prefere passar seu tempo livre ao ar livre ou em ambientes fechados?",
+      question: "8. Se você tivesse que escolher o ambiente ideal para seus hobbies, qual seria?",
       options: [
-        "Ao ar livre",
-        "Em ambientes fechados",
-        "Tanto faz",
+        "Ao ar livre, explorando trilhas, praias ou parques em diferentes climas",
+        "Em um estúdio ou espaço fechado, com tudo organizado para criar ou praticar um hobby",
+        "Combinando os dois, variando entre locais internos e externos de acordo com a ocasião",
+        "Em qualquer lugar onde eu possa ter novas experiências, seja em casa ou fora",
       ],
     },
   ];
+  
 
   currentQuestionIndex: number = 0;
   selectedOption: number | null = null;

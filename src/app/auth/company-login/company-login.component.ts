@@ -22,4 +22,15 @@ export class CompanyLoginComponent {
     });
   }
 
+  navegarParaProfile() {
+    console.log("Navegando para a tela de perfil da empresa");
+    this.router.navigate(['/company']).then(success => {
+      if (success) {
+        console.log('Navegação bem-sucedida');
+      } else {
+        console.log('Falha na navegação');
+      }
+    });
+  }
+
 }
