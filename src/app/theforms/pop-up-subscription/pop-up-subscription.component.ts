@@ -23,8 +23,13 @@ export class PopUpSubscriptionComponent {
   }
 
   
-  redirecionarParaFutebol() {
+  redirecionarParaCadastro() {
     window.scrollTo(0, 0);
-    this.router.navigate(['/football']);
+    this.router.navigate(['/signup']);
+  }
+
+  redirecionarParaLogin() {
+    window.scrollTo(0, 0);
+    this.router.navigate(['/login']);
   }
 }

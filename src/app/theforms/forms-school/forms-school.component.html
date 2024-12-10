@@ -1,7 +1,7 @@
 <app-navgreen></app-navgreen>
 <div class="container">
     <div class="d-flex align-items-center">
-      <span class="material-icons" style="font-size: 30px; color: #17616E;">arrow_back</span>
+      <span class="material-icons" style="font-size: 30px; color: #17616E;"  (click)="navegarParaProfile()">arrow_back</span>
     </div>
   
     <h5 class="titulo1">Editar Curso</h5>
@@ -9,7 +9,7 @@
     <form (ngSubmit)="onSubmit()">
       <div class="container-img">
         <div class="img_edita">
-          <img [src]="imagemPreview || ''" alt=" Imagem do Curso">
+          <img src="images/remoschool1.png">
         </div>
         <div class="button-container-img">
           <span>Alterar ou Adicionar Imagem</span>

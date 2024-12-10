@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NavgreenComponent } from "../../shared/components/navbar/navgreen/navgreen.component";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-forms-school',
@@ -62,4 +64,16 @@ export class FormsSchoolComponent {
     localStorage.setItem('dadosCurso', JSON.stringify(this.curso));
     alert('Formulário enviado e salvo com sucesso!');
   }
+
+  constructor(private router: Router) {}
+
+  navegarParaProfile() {
+    window.scrollTo(0, 0);
+    this.router.navigate(['/company']).then(success => {
+      console.log("Navegação bem-sucedida?", success);
+    }).catch(error => {
+      console.error("Erro na navegação:", error);
+    });
+  }
+
 }
