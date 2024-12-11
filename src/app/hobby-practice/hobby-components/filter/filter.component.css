@@ -1,32 +1,32 @@
-/* Estilos do texto fora da borda */
-.filter-info {
-  padding: 22px 0 0px 168px;
+section {
+  padding: 22px 154px 0 166px;
 }
 
 .gray-text {
   color: #403939;
-  font-size: 18px;
+  font-size: 20px;
+  padding-bottom: 22px;
+  font-weight: 500;
   margin: 0;
-}
-
-h3 {
-  padding-bottom: 8px;
 }
 
 .blue-text {
   color: #043B64;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
 }
 
-p.gray-text {
+.gray-info {
   color: #403939;
-  padding-top: 4px;
-  margin-bottom: 16px;
+  margin: 0;
+  font-size: 16px;
+  padding-top: 6px;
+  font-weight: 500;
 }
 
 .container-total {
+  padding: 12px 0 48px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -35,7 +35,7 @@ p.gray-text {
 .filter-container {
   max-width: 300px;
   padding: 2px 0 0 0;
-  background-color: white;  
+  background-color: white;
 }
 
 .input-container {
@@ -48,18 +48,23 @@ p.gray-text {
 .orange-text {
   color: #e15c31;
   font-weight: 600;
-  padding: 0 15px;
+  padding-right: 10px;
+}
+
+.max {
+  padding-left: 15px;
 }
 
 .price-input {
   width: 60px;
-  padding: 8px;
+  padding: 6px 16px;
   border: 1px solid #043B64;
   border-radius: 30px;
   background-color: #043B64;
   color: white;
   font-size: 20px;
   text-align: center;
+  outline: none;
 
   /* Remove setas */
   -webkit-appearance: none;
@@ -76,8 +81,8 @@ p.gray-text {
 .slider-container {
   position: relative;
   height: 18px;
-  padding-left: 10px;
-  margin: 15px 0;
+  margin: 0;
+  padding-top: 14px;
 }
 
 .price-range {
@@ -91,9 +96,121 @@ p.gray-text {
 .price-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   background-color: #043B64;
   cursor: pointer;
   border-radius: 50%;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 22px 108px 0 114px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 22px 62px 0 62px;
+  }
+
+  .gray-text {
+    font-size: 18px;
+    padding-bottom: 22px;
+  }
+
+  .blue-text {
+    font-size: 16px;
+  }
+
+  .gray-info {
+    font-size: 16px;
+    padding-top: 6px;
+  }
+
+  .price-input {
+    width: 60px;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 18px 42px 0 38px;
+  }
+
+  .gray-text {
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
+
+  .blue-text {
+    font-size: 14px;
+  }
+
+  .gray-info {
+    font-size: 14px;
+    padding-top: 6px;
+  }
+
+  .slider-container {
+    padding-top: 12px;
+  }
+
+  .price-input {
+    width: 60px;
+    padding: 6px 8px;
+    font-size: 16px;
+  }
+
+  .orange-text {
+    font-size: 14px;
+    padding-right: 8px;
+  }
+
+  .max {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 18px 34px 0 30px;
+  }
+
+  .gray-text {
+    font-size: 15px;
+    padding-bottom: 16px;
+  }
+
+  .blue-text {
+    font-size: 14px;
+  }
+
+  .gray-info {
+    font-size: 14px;
+    padding-top: 6px;
+  }
+
+  .slider-container {
+    padding-top: 12px;
+  }
+
+  .price-input {
+    width: 60px;
+    padding: 6px 8px;
+    font-size: 15px;
+  }
+
+  .orange-text {
+    font-size: 13px;
+    padding-right: 8px;
+  }
+
+  .max {
+    padding-left: 12px;
+  }
 }

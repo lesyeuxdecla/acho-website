@@ -22,7 +22,7 @@
       <p class="hobby-name">{{ hobby.name }}</p>
       <div class="image-container">
         <img [src]="hobby.img" alt="{{ hobby.name }}" class="hobby-image">
-        <button class="see-more-button">Veja Mais</button>
+        <button class="see-more-button" (click)="navigateToReading()">Veja Mais</button>
       </div>
     </div>
   </div>

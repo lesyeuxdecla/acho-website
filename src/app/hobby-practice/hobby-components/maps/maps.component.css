@@ -1,5 +1,8 @@
+section {
+  padding: 22px 154px 0 166px;
+}
+
 .maps-info {
-  padding: 22px 0 0 168px;
   padding-bottom: 15px;
 }
 
@@ -8,6 +11,7 @@
   font-size: 18px;
   margin: 0;
   padding-bottom: 8px;
+  font-weight: 500;
 }
 
 .blue-text {
@@ -15,29 +19,31 @@
   font-size: 18px;
   font-weight: 600;
   margin: 0;
+  font-weight: 500;
 }
 
-p.gray-text {
+.gray-info {
   color: #403939;
-  padding-top: 4px;
-  padding-bottom: 20px;
+  margin: 0;
+  font-size: 16px;
+  padding-top: 6px;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 #filter-button {
-  background-color: #043B64; 
+  background-color: #043B64;
   font-family: dm sans;
-  color: #ffffff; 
+  color: #ffffff;
   font-weight: bold;
-  border: 2px solid #043B64; 
-  border-radius: 20px;
-  padding: 10px 20px; 
+  border: 2px solid #043B64;
+  border-radius: 24px;
+  padding: 8px 24px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -47,26 +53,24 @@ p.gray-text {
   background-color: transparent;
   color: #043B64;
   font-weight: bold;
-  border: 1px solid #043B64;
+  border: 2px solid #043B64;
 }
-
 
 .map-container {
   position: relative;
   height: 100%;
   width: 100%;
-  padding-left: 173px;
 }
 
 #map {
   height: 500px;
-  width: 50%;
+  width: 100%;
 }
 
 .search-box {
   position: absolute;
   top: 40px;
-  left: 196px;
+  left: 40px;
   z-index: 5;
   background-color: white;
   width: 300px;
@@ -80,24 +84,24 @@ p.gray-text {
   font-size: 14px;
   color: #403939;
   background-color: none;
-  border: 1px solid #043B64; 
+  border: 1px solid #043B64;
   border-radius: 8px;
   padding: 10px;
   width: 100%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   transition: all 0.5s ease;
 }
 
 .search-box input:focus {
-  outline: none; 
-  border-color: #043B64; 
-  background-color: #fff; 
-  box-shadow: 0 0 5px #043B64; 
+  outline: none;
+  border-color: #043B64;
+  background-color: #fff;
+  box-shadow: 0 0 5px #043B64;
 }
 
 .search-box input::placeholder {
-  color: #9e9e9e; 
-  font-weight: 300; 
+  color: #9e9e9e;
+  font-weight: 300;
 }
 
 .search-box input:hover {
@@ -105,3 +109,141 @@ p.gray-text {
   background-color: #fff;
 }
 
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 22px 108px 0 114px;
+  }
+
+  .search-box {
+    top: 32px;
+    left: 32px;
+    border-radius: 10px;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 22px 62px 0 62px;
+  }
+
+  .gray-text {
+    font-size: 18px;
+    padding-bottom: 22px;
+  }
+
+  .blue-text {
+    font-size: 16px;
+  }
+
+  .gray-info {
+    font-size: 16px;
+    padding-top: 6px;
+  }
+
+  .search-box {
+    top: 16px;
+    left: 16px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 8px;
+  }
+
+  .search-box input {
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 18px 42px 0 38px;
+  }
+
+  .gray-text {
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
+
+  .blue-text {
+    font-size: 14px;
+  }
+
+  .gray-info {
+    font-size: 14px;
+    padding-top: 6px;
+  }
+
+  .search-box {
+    top: 8px;
+    left: 8px;
+    width: 224px;
+    border-radius: 10px;
+    padding: 8px;
+  }
+
+  .search-box input {
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 8px 8px;
+    width: 100%;
+  }
+
+  .button-container {
+    padding-top: 32px;
+  }
+
+  #filter-button {
+    border-radius: 24px;
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 18px 34px 0 30px;
+  }
+
+  .gray-text {
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
+
+  .blue-text {
+    font-size: 14px;
+  }
+
+  .gray-info {
+    font-size: 14px;
+    padding-top: 6px;
+  }
+
+  .search-box {
+    top: 8px;
+    left: 8px;
+    width: 224px;
+    border-radius: 10px;
+    padding: 8px;
+  }
+
+  .search-box input {
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 8px 8px;
+    width: 100%;
+  }
+
+  .button-container {
+    padding-top: 32px;
+  }
+
+  #filter-button {
+    border-radius: 24px;
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+}

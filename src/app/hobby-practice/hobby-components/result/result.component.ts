@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
   styleUrl: './result.component.css'
 })
 export class ResultComponent {
+  @ViewChild('carousel') carousel!: ElementRef;
+
   schools = [
     {
       image: 'images/remoschool1.png',
@@ -43,7 +45,40 @@ export class ResultComponent {
   constructor(private router: Router) {}
 
   navigateToHome() {
+    window.scrollTo(0, 0);
     this.router.navigate(['/school']);
   } 
 
+  isDragging = false;
+  startX = 0;
+  scrollLeft = 0;
+
+  movePrev() {
+    const carousel = this.carousel.nativeElement;
+    carousel.scrollBy({ left: -310, behavior: 'smooth' });
+  }
+
+  moveNext() {
+    const carousel = this.carousel.nativeElement;
+    carousel.scrollBy({ left: 310, behavior: 'smooth' });
+  }
+
+  startDragging(event: MouseEvent) {
+    this.isDragging = true;
+    const carousel = this.carousel.nativeElement;
+    this.startX = event.pageX - carousel.offsetLeft;
+    this.scrollLeft = carousel.scrollLeft;
+  }
+
+  dragging(event: MouseEvent) {
+    if (!this.isDragging) return;
+    const carousel = this.carousel.nativeElement;
+    const x = event.pageX - carousel.offsetLeft;
+    const walk = (x - this.startX) * 2;
+    carousel.scrollLeft = this.scrollLeft - walk;
+  }
+
+  stopDragging() {
+    this.isDragging = false;
+  }
 }

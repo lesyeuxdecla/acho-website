@@ -1,6 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-explore',
@@ -84,7 +85,7 @@ export class ExploreComponent {
 
   currentScreenSize: string = 'desktop';
 
-  constructor(private breakpointObserver: BreakpointObserver) {
+  constructor(private breakpointObserver: BreakpointObserver, private router: Router) {
     this.observeScreenSize();
   }
 
@@ -109,4 +110,9 @@ export class ExploreComponent {
       }
     });
   }
+  
+  navigateToReading() {
+    window.scrollTo(0, 0);
+    this.router.navigate(['/reading']);
+  } 
 }
