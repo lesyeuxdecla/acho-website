@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './hobby-do-mes.component.html',
   styleUrl: './hobby-do-mes.component.css'
 })
+
 export class HobbyDoMesComponent {
 
   currentScreenSize: string = 'desktop';
@@ -16,7 +17,6 @@ export class HobbyDoMesComponent {
   constructor(private breakpointObserver: BreakpointObserver, private router: Router) {
     this.observeScreenSize();
   }
-
 
   observeScreenSize() {
     this.breakpointObserver.observe([
@@ -39,7 +39,6 @@ export class HobbyDoMesComponent {
     });
   }
 
-  
   redirecionarParaDance() {
     window.scrollTo(0, 0);
     this.router.navigate(['/dance']);

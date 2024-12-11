@@ -10,8 +10,8 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './action-bar.component.html',
   styleUrl: './action-bar.component.css'
 })
+
 export class ActionBarComponent {
-  
   constructor(private breakpointObserver: BreakpointObserver, private router: Router, @Inject(PLATFORM_ID) private platformId: any) {
     this.observeScreenSize();
   }

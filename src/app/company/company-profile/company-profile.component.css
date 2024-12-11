@@ -1,28 +1,29 @@
 section {
-  padding: 32px 0 0 56px;
+  padding: 32px 168px 0 56px;
 }
 
 .informacoes {
   display: flex;
-  justify-content: space-evenly;
-  width: 480px;
+  gap: 48px;
+  width: 100%;
 }
 
 .image {
-  width: 184px;
-  height: 184px;
+  width: 160px;
+  height: 160px;
   display: block;
   justify-items: center;
 }
 
 .infos_principais {
-  padding-left: 64px;
   display: block;
   align-self: center;
+  width: 50%;
+  padding-top: 16px;
 }
 
 .nome {
-  color: #043B64;
+  color: #17616E;
   font-family: dm sans;
   font-weight: 600;
   font-size: 24px;
@@ -56,7 +57,7 @@ section {
 .icone_edit {
   width: 22px;
   height: 22px;
-  color: #043B64;
+  color: #17616E;
 }
 
 h3 {
@@ -65,11 +66,10 @@ h3 {
   font-size: 16px;
   padding-left: 6px;
   margin: 0;
-  color: #043B64;
+  color: #17616E;
   font-family: Dm Sans;
   font-weight: 500;
 }
-
 
 .social-icons {
   padding-top: 12px;
@@ -95,7 +95,7 @@ h4 {
   letter-spacing: 0.6px;
   margin: 0;
   padding-bottom: 6px;
-  color: #043B64;
+  color: #17616E;
 }
 
 p {
@@ -105,6 +105,7 @@ p {
   font-size: 16px;
 }  
 
+/* Cursos Disponíveis */
 .section-title {
   font-size: 18px;
   padding-top: 50px;
@@ -150,7 +151,7 @@ p {
   font-weight: 500;
   color: #17616E;
   margin: 0; 
-  padding: 0 4px 8px 4px;
+  padding: 0 0 8px 0;
 }
 
 .training-title {
@@ -158,6 +159,7 @@ p {
   font-weight: 500;
   color: #005f73;
   margin: 0;
+  padding: 24px 0 0;
 }
 
 .sub-title {
@@ -165,13 +167,16 @@ p {
   font-weight: 500;
   color: #403939;
   margin: 0;
+  padding: 0 0 0;
 }
 
 .description {
+  text-align: justify;
   font-size: 15px;
   line-height: 1.4;
   color: #2e2b2b;
   margin: 0;
+  padding: 0 32px 0 0;
 }
 
 .edit-button {
@@ -182,7 +187,7 @@ p {
   color: #17616E;
   border: none;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .edit-button:hover {

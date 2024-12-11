@@ -1,70 +1,72 @@
-<div class="profile-container">
-    <div class="company-header">
-      <img class="company-logo" src="images/cursos.png" alt="Logo da Empresa">
-      <div class="company-info">
-        <h2>Centro de Treinamento Remo</h2>
-        <p>São Paulo – SP</p>
-      </div>
+<section class="profile-container">
+  <div class="informacoes">
+    <div class="profile_image">
+      <img class="image" src="images/cursos.png" alt="">
     </div>
-  
-    <div class="contact-info">
-      <div class="contact-row">
-        <div class="contact-item">
-          <span>E-mail</span>
-          <p>contatocentroremo.com.br</p>
-        </div>
-        <div class="contact-item">
-          <span>CNPJ</span>
-          <p>45.4560.138/0001-30</p>
-        </div>
+    <div class="infos_principais">
+      <h1 class="nome">Centro de Treinamento Remo</h1>
+      <h2 class="local">São Paulo – SP</h2> 
+    </div>
+  </div>
+
+  <div class="informacoes_dois">
+    <div class="superior">
+      <div class="e-mail">
+        <h4>E-mail</h4>
+        <p>contato&#64;centroremo.com.br</p>
       </div>
       <div class="contact-item">
-        <span>Telefone</span>
-        <p>55 11 97456-6329</p>
+        <h4>CNPJ</h4>
+        <p>45.4560.138/0001-30</p>
       </div>
     </div>
+    <div class="telefone">
+      <h4>Telefone</h4>
+      <p>(11) 93205-8985</p>
+    </div>
+  </div>
 
 
-    <div class="button-container">
-      <button 
-        class="course-button" 
-        [class.active]="isCourseActive" 
-        (click)="toggleCourse()">
-        Por Cursos
-      </button>
-      <button 
-        class="course-button" 
-        [class.active]="isInscricoesActive" 
-        (click)="toggleInscricoes()">
-        Últimas Inscrições
-      </button>
+  <div class="button-container">
+    <button 
+      class="course-button" 
+      [class.active]="isCourseActive" 
+      (click)="toggleCourse()">
+      Por Cursos
+    </button>
+    <button 
+      class="course-button" 
+      [class.active]="isInscricoesActive" 
+      (click)="toggleInscricoes()">
+      Últimas Inscrições
+    </button>
+  </div>
+  
+  
+  <!-- Container de Cursos -->
+  <div class="course-container" *ngIf="isCourseActive">
+    <div class="course-header" (click)="toggleCourse()">
+      <h4 class="azul">Centro de Treinamento Remo</h4>
+      <p>Centro de Treinamento Infanto-Juvenil</p>
+      <span class="icon">{{ isExpanded ? '▲' : '▼' }}</span>
     </div>
-    
-    
-    <!-- Container de Cursos -->
-    <div class="course-container" *ngIf="isCourseActive">
-      <div class="course-header" (click)="toggleCourse()">
-        <h3 class="azul">Centro de Treinamento Remo</h3>
-        <p>Centro de Treinamento Infanto-Juvenil</p>
-        <span class="icon">{{ isExpanded ? '▲' : '▼' }}</span>
-      </div>
-    
-      <!-- Lista de inscritos (aparece ao clicar no cabeçalho) -->
-      <ul class="student-list" *ngIf="isExpanded">
-        <li *ngFor="let student of students">
-          {{ student.name }}
-          <a href="#" class="view-more">Ver mais</a>
-        </li>
-      </ul>
-    </div>
-    
-    <!-- Container de Últimas Inscrições -->
-    <div class="course-container" *ngIf="isInscricoesActive">
-      <ul class="student-list" *ngIf="isExpandedInscricoes">
-        <li *ngFor="let student of students">
-          {{ student.name }}
-          <a href="#" class="view-more">Ver mais</a>
-        </li>
-      </ul>
-    </div>
-    
+  
+    <!-- Lista de inscritos (aparece ao clicar no cabeçalho) -->
+    <ul class="student-list" *ngIf="isExpanded">
+      <li *ngFor="let student of students">
+        {{ student.name }}
+        <a href="#" class="view-more">Ver mais</a>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Container de Últimas Inscrições -->
+  <div class="course-container" *ngIf="isInscricoesActive">
+    <ul class="student-list" *ngIf="isExpandedInscricoes">
+      <li *ngFor="let student of students">
+        {{ student.name }}
+        <a href="#" class="view-more">Ver mais</a>
+      </li>
+    </ul>
+  </div>
+</section>
