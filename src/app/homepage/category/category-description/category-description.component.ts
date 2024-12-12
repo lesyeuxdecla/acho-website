@@ -74,6 +74,7 @@ export class CategoryDescriptionComponent implements OnInit {
   }
 
   navegarParaCategoria(nome: string): void {
+    window.scrollTo(0, 0);
     switch (nome) {
       case 'Futebol':
         this.router.navigate(['/football']);

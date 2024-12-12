@@ -57,6 +57,7 @@ export class FormsComponent {
   }
 
   redirecionarParaCompany() {
+    window.scrollTo(0, 0);
     this.router.navigate(['/company']);
   }
 

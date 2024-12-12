@@ -21,44 +21,44 @@ interface Hobby {
 export class QuizresultComponent {
   hobbies: Hobby[] = [
     {
-      title: 'Mixologia',
-      description: 'Mixologia é um hobbie que abrange a confecção de bebidas alcoólicas variadas.',
-      image: 'images/mixologia.png'
+      title: 'Leitura',
+      description: 'Leitura é explorar livros, revistas ou artigos para entretenimento ou aprendizado.',
+      image: 'images/leituraa.png'
     },
     {
-      title: 'Ourivesaria',
-      description: 'Ourivesaria é a arte de criar e consertar peças de joias, utilizando metais preciosos.',
-      image: 'images/ourivesaria.png' 
+      title: 'Escrita',
+      description: 'Escrita Criativa envolve criar histórias, poemas ou textos para expressar ideias e sentimentos.',
+      image: 'images/escrita.png'
     },
     {
-      title: 'Carpintaria',
-      description: 'Carpintaria é o trabalho com madeira para criar móveis, estruturas e outros objetos.',
-      image: 'images/carpintaria.png' 
+      title: 'RPG',
+      description: 'RPG é um hobby que combina estratégia e narrativa, com aventuras guiadas por um mestre.',
+      image: 'images/rpg.png'
     },
     {
-      title: 'Costura',
-      description: 'Costura é o processo de unir tecidos, criando roupas e outros itens de vestuário.',
-      image: 'images/costura.png' 
+      title: 'Idiomas',
+      description: 'Estudo de Idiomas é aprender novas línguas, expandindo habilidades de comunicação.',
+      image: 'images/idiomas.png'
     },
     {
-      title: 'Florística',
-      description: 'Florística é a arte de arranjar flores e plantas para decoração e eventos.',
-      image: 'images/florística.png'
+      title: 'Xadrez',
+      description: 'Xadrez é um jogo estratégico que desafia o raciocínio lógico e a tomada de decisões.',
+      image: 'images/xadrex.png'
     },
     {
-      title: 'Florística',
-      description: 'Florística é a arte de arranjar flores e plantas para decoração e eventos.',
-      image: 'images/florística.png'
+      title: 'Pesquisas',
+      description: 'Pesquisas Históricas envolvem explorar fatos do passado para ampliar o conhecimento.',
+      image: 'images/pesquisas.png'
     },
     {
-      title: 'Florística',
-      description: 'Florística é a arte de arranjar flores e plantas para decoração e eventos.',
-      image: 'images/florística.png'
+      title: 'Programação',
+      description: 'Programação é o desenvolvimento de soluções tecnológicas através da criação de códigos.',
+      image: 'images/programar.png'
     },
     {
-      title: 'Florística',
-      description: 'Florística é a arte de arranjar flores e plantas para decoração e eventos.',
-      image: 'images/florística.png'
+      title: 'Puzzles',
+      description: 'Puzzles são desafios de quebra-cabeças que estimulam o cérebro e proporcionam diversão.',
+      image: 'images/puzzles.png'
     }
   ];
 

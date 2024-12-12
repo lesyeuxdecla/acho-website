@@ -34,6 +34,7 @@ export class CategoryComponent implements AfterViewInit{
 
   irParaCategoria(nome: string): void {
     this.router.navigate(['/category', nome]);
+    window.scrollTo(0, 0);
   }
 
   currentScreenSize: string = 'desktop';
