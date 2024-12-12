@@ -13,14 +13,23 @@ import { LoginDashboardComponent } from '../login/login-dashboard/login-dashboar
 export class SignUpComponent {
   constructor(private router: Router) {}
 
-  navegarParaLogin() {
-    console.log("Navegando para a tela de login");
+  navegarParaLogin(event: Event) {
+    event.preventDefault(); 
+    console.log("Tentando navegar para a tela de cadastro...");
     this.router.navigate(['/login']).then(success => {
-      if (success) {
-        console.log('Navegação bem-sucedida');
-      } else {
-        console.log('Falha na navegação');
-      }
+      console.log("Navegação bem-sucedida?", success);
+    }).catch(error => {
+      console.error("Erro na navegação:", error);
+    });
+  }
+
+  navegarParaProfile(event: Event) {
+    event.preventDefault(); 
+    console.log("Tentando navegar para a tela de cadastro...");
+    this.router.navigate(['/login']).then(success => {
+      console.log("Navegação bem-sucedida?", success);
+    }).catch(error => {
+      console.error("Erro na navegação:", error);
     });
   }
 }

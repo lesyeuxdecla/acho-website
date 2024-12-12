@@ -2,52 +2,54 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
 import { LoginDashboardComponent } from "./login-dashboard/login-dashboard.component";
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [NavbarComponent, LoginDashboardComponent],
+  imports: [NavbarComponent, LoginDashboardComponent, CommonModule, FormsModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-
-  email: string = '';
-  senha: string = '';
-  isSuccessVisible: boolean = false; // Variável para controlar a visibilidade do pop-up de sucesso
+  isModalVisible: boolean = false; 
+  email: string = ''; 
+  senha: string = '';  
 
   constructor(private router: Router) {}
 
-  // Função que simula o login
-  realizarLogin() {
-    // Aqui você pode simular a verificação de login (exemplo: comparação simples)
-    if (this.email === 'abc@email.com' && this.senha === 'senha123') {
-      // Caso as credenciais sejam corretas, armazene um valor no localStorage para simular o login
-      localStorage.setItem('usuario_logado', this.email);
-      this.isSuccessVisible = true; // Exibe o pop-up de sucesso
+  
+  enviarFormulario() {
+    
+    if (this.email && this.senha) {
+      console.log("Formulário enviado!");
+      
+      this.isModalVisible = true;
     } else {
-      alert('Credenciais inválidas');
+      console.log("Preencha todos os campos!");
     }
   }
 
-  // Função para redirecionar para a página inicial após login bem-sucedido
-  voltarHome() {
-    this.router.navigate(['/home']); // Redireciona para a página inicial (home)
-  }
-
-  // Função para fechar o pop-up de sucesso (opcional, caso queira fechar manualmente)
+  
   fecharModal() {
-    this.isSuccessVisible = false;
+    this.isModalVisible = false;
   }
 
-  navegarParaCadastro() {
+ 
+  redirecionarParaHome() {
+    this.router.navigate(['/home']);
+    this.fecharModal();
+  }
+
+  navegarParaCadastro(event: Event) {
+    event.preventDefault(); 
     console.log("Tentando navegar para a tela de cadastro...");
-    this.router.navigate(['/sign-up']).then(success => {
+    this.router.navigate(['/signup']).then(success => {
       console.log("Navegação bem-sucedida?", success);
     }).catch(error => {
       console.error("Erro na navegação:", error);
     });
   }
-
 }

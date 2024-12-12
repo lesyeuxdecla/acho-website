@@ -97,6 +97,16 @@ input::placeholder {
   display: block; 
 }
 
+.signup-button {
+  border: none;
+  font-family: dm sans;
+  color: white;
+  background: none;
+  font-weight: bold;
+  margin: 0;
+}
+
+
 .login-button:hover {
   background-color: #e15c31;
   border: 1px solid white;

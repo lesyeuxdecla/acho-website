@@ -2,16 +2,16 @@
 <app-login-dashboard></app-login-dashboard>
 
 <section>
-<div class="login-card">
+  <div class="login-card">
     <h1>Log in</h1>
-    <form>
+    <form (ngSubmit)="enviarFormulario()">
       <div class="input-group">
         <span class="material-icons">email</span>
-        <input type="email" placeholder="abc@email.com" required />
+        <input type="email" placeholder="abc@email.com" required [(ngModel)]="email" name="email" />
       </div>
       <div class="input-group">
         <span class="material-icons">lock</span>
-        <input type="password" placeholder="senha" required />
+        <input type="password" placeholder="senha" required [(ngModel)]="senha" name="senha" />
       </div>
       <a href="#" class="forgot-password">Esqueceu sua senha?</a>
       <button type="submit" class="login-button">Entrar</button>
@@ -28,7 +28,23 @@
       </button>
     </div>
     <p class="signup">
-      Não tem uma conta? <a href="#" (click)="navegarParaCadastro()">Cadastre-se</a>
+      Não tem uma conta? 
+      <button type="button" class="signup-button" (click)="navegarParaCadastro($event)">Cadastre-se</button>
     </p>
   </div>
 </section>
+
+
+<div class="modal" *ngIf="isModalVisible" (click)="fecharModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h5>Bem-vindo ao ACHÔ!</h5>
+    </div>
+    <div class="modal-body">
+      <p>É ótimo ter você conosco! Seu formulário foi enviado com sucesso. Por favor, verifique seu email para mais informações.</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary" (click)="redirecionarParaHome()">Voltar para o site</button>
+    </div>
+  </div>
+</div>

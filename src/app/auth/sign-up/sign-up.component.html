@@ -17,7 +17,7 @@
         <span class="material-icons">lock</span>
         <input type="password" placeholder="confirmar senha" required />
       </div>
-      <button type="submit" class="login-button">Cadastre-se</button>
+      <button type="submit" class="login-button" (click) ="navegarParaProfile($event)">Cadastre-se</button>
     </form>
     <div class="divider">
       <span>OU</span>
@@ -31,7 +31,8 @@
       </button>
     </div>
     <p class="signup">
-      Já tem uma conta? <a href="#" (click)="navegarParaLogin()">Entre</a>
+      Já tem uma conta? 
+      <button type="button" class="signup-button" (click)="navegarParaLogin($event)">Entre</button>
     </p>
   </div>
 </section>

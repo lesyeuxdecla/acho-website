@@ -3,6 +3,8 @@ import { NavbarComponent } from "../../shared/components/navbar/navbar.component
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Router } from '@angular/router';
+
 
 interface Hobby {
   title: string;
@@ -52,7 +54,7 @@ export class QuizresultComponent {
     },
     {
       title: 'Programação',
-      description: 'Programação é o desenvolvimento de soluções tecnológicas através da criação de códigos.',
+      description: 'Programação cria soluções tecnológicas por meio de códigos.',
       image: 'images/programar.png'
     },
     {
@@ -61,14 +63,10 @@ export class QuizresultComponent {
       image: 'images/puzzles.png'
     }
   ];
-
-  goToDetails(hobbyTitle: string): void {
-    console.log(`Navegando para detalhes de: ${hobbyTitle}`);
-  }
-
+  
   currentScreenSize: string = 'desktop';
 
-  constructor(private breakpointObserver: BreakpointObserver) {
+  constructor(private breakpointObserver: BreakpointObserver, private router: Router) {
     this.observeScreenSize();
   }
   observeScreenSize() {
@@ -90,5 +88,13 @@ export class QuizresultComponent {
         }
       }
     });
+  }
+
+  goToDetails(hobbyTitle: string): void {
+    if (hobbyTitle === 'Leitura') {
+      this.router.navigate(['/reading']);
+    } else {
+      console.log(`Navegando para detalhes de: ${hobbyTitle}`);
+    }
   }
 }

@@ -13,14 +13,13 @@ import { NavgreenComponent } from "../../shared/components/navbar/navgreen/navgr
 export class CompanySignupComponent {
   constructor(private router: Router) {}
 
-  navegarParaLogin() {
-    console.log("Navegando para a tela de login");
+  navegarParaLogin(event: Event) {
+    event.preventDefault(); 
+    console.log("Tentando navegar para a tela de cadastro...");
     this.router.navigate(['/company-login']).then(success => {
-      if (success) {
-        console.log('Navegação bem-sucedida');
-      } else {
-        console.log('Falha na navegação');
-      }
+      console.log("Navegação bem-sucedida?", success);
+    }).catch(error => {
+      console.error("Erro na navegação:", error);
     });
   }
 }

@@ -9,6 +9,14 @@ section {
   z-index: 2;
 }
 
+.signup-button {
+  border: none;
+  font-family: dm sans;
+  color: white;
+  background: none;
+  font-weight: bold;
+  margin: 0;
+}
 
 .login-card {
   width: 408px;
