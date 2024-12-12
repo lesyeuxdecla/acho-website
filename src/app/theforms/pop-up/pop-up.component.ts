@@ -24,6 +24,6 @@ export class PopUpComponent {
   
   redirecionarParaCompany() {
     window.scrollTo(0, 0);
-    this.router.navigate(['/company-sign-up']);
+    this.router.navigate(['/company-login']);
   }
 }

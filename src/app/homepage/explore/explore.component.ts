@@ -37,7 +37,6 @@ export class ExploreComponent {
 
   carrosselMoved = false;
 
-  
   startDragging(event: MouseEvent) {
     this.isDragging = true;
     this.startX = event.pageX - this.carrossel.nativeElement.offsetLeft;
@@ -45,7 +44,6 @@ export class ExploreComponent {
     event.preventDefault(); 
   }
 
-  
   dragging(event: MouseEvent) {
     if (!this.isDragging) return;
     const x = event.pageX - this.carrossel.nativeElement.offsetLeft;
@@ -114,5 +112,5 @@ export class ExploreComponent {
   navigateToReading() {
     window.scrollTo(0, 0);
     this.router.navigate(['/reading']);
-  } 
+  }
 }
