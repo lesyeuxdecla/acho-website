@@ -19,12 +19,16 @@ Transformar vidas ao tornar a exploração de hobbies uma experiência enriquece
 ### **Visão**
 Ser a principal referência em descoberta e desenvolvimento de hobbies no mundo.
 
+
+
 ## 🎨 Design e Identidade Visual
 
 A identidade visual do ACHÔ reflete sua missão com um design moderno e sofisticado, utilizando as seguintes cores principais:
 - **Laranja quente:** Otimismo e acolhimento.
 - **Branco:** Liberdade visual e sofisticação.
 - **Azul marinho:** Confiança e segurança.
+
+  
 
 ## 🌟 Funcionalidades Principais
 
@@ -33,6 +37,8 @@ A identidade visual do ACHÔ reflete sua missão com um design moderno e sofisti
 - **Recursos Textuais:** Informações de qualidade detalhadas sobre origem, benefícios, materiais, custo inicial e etc.
 - **Integração de filtro e localização:** Filtragem de preço de acordo com o orçamento do usuário e seleção de área de alcance via API do Google Maps.
 - **Comunidade:** Conexão com instrutores e outros entusiastas.
+
+
 
 ## 📑 Estrutura das Categorias
 
@@ -50,6 +56,8 @@ Cada categoria apresenta informações detalhadas sobre:
 - Materiais necessários
 - Custo inicial e ferramentas de comparação de preços
 
+  
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **Front-end:** Angular.
@@ -57,11 +65,15 @@ Cada categoria apresenta informações detalhadas sobre:
 - **APIs:** Integração com APIs de mapas para localização de escolas e instrutores.
 - **Design:** Figma para prototipagem e layout.
 
+  
+
 ## 🔍 Pesquisa e Problemas Abordados
 
 Baseado em pesquisas realizadas, o ACHÔ busca solucionar problemas como:
 - **Falta de tempo para hobbies:** Uma barreira comum entre trabalhadores brasileiros.
 - **Excesso de produtividade:** A negligência de atividades que promovem lazer e criatividade.
+
+  
 
 ## 📝 Como Usar
 1. Clone este repositório:
@@ -75,6 +87,15 @@ Baseado em pesquisas realizadas, o ACHÔ busca solucionar problemas como:
    ng serve
    ```
 4. Por fim, acesse a aplicação em [http://localhost:4200](http://localhost:4200).
+
+
+## Equipe
+- [Clarice](https://github.com/lesyeuxdecla)
+- [Nathalia](https://github.com/Nathalia-Valentim)
+- [Lethicia](https://github.com/lethicialacerda)
+- [Laura](https://github.com/laurachristi1)
+- [Luís Fernando](https://github.com/LuisMargalhaes)
+
 
 
 **Explore o mundo dos hobbies com o ACHÔ!** 
