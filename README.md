@@ -1,27 +1,80 @@
-# AchoWebsite
+# ACHÔ
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+O **ACHÔ** é uma plataforma inovadora dedicada a ajudar pessoas a explorar, descobrir e desenvolver hobbies que promovam satisfação, lazer e bem-estar. Nosso objetivo é transformar a forma como os usuários encontram atividades significativas, conectando-os com recursos, conhecimentos e comunidades que inspiram criatividade, equilíbrio e crescimento pessoal.
 
-## Development server
+## 🎯 Visão Geral
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O ACHÔ é projetado para oferecer uma experiência intuitiva e amigável, permitindo que qualquer pessoa descubra hobbies alinhados aos seus interesses e estilo de vida. A plataforma conta com uma interface moderna, categorização organizada e funcionalidades interativas que otimizam a jornada do usuário.
 
-## Code scaffolding
+## 🧭 Valores, Missão e Visão
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### **Valores**
+- **Autenticidade e Comunidade:** Conectar usuários com informações reais e criar redes de apoio.
+- **Bem-estar e Acessibilidade:** Tornar o aprendizado e prática de hobbies simples e acessíveis.
+- **Inspiração e Exploração:** Estimular a curiosidade e descoberta de novas paixões.
 
-## Build
+### **Missão**
+Transformar vidas ao tornar a exploração de hobbies uma experiência enriquecedora e acessível.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### **Visão**
+Ser a principal referência em descoberta e desenvolvimento de hobbies no mundo.
 
-## Running unit tests
+## 🎨 Design e Identidade Visual
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+A identidade visual do ACHÔ reflete sua missão com um design moderno e sofisticado, utilizando as seguintes cores principais:
+- **Laranja quente:** Otimismo e acolhimento.
+- **Branco:** Liberdade visual e sofisticação.
+- **Azul marinho:** Confiança e segurança.
 
-## Running end-to-end tests
+## 🌟 Funcionalidades Principais
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Quiz Personalizado:** Um questionário interativo para sugerir hobbies alinhados à personalidade, orçamento e estilo de vida do usuário.
+- **Categorias de Hobbies:** Organização e diversidade clara em áreas como Esportes, Artes, Bem-estar, Tecnologia, entre outras.
+- **Recursos Textuais:** Informações de qualidade detalhadas sobre origem, benefícios, materiais, custo inicial e etc.
+- **Integração de filtro e localização:** Filtragem de preço de acordo com o orçamento do usuário e seleção de área de alcance via API do Google Maps.
+- **Comunidade:** Conexão com instrutores e outros entusiastas.
 
-## Further help
+## 📑 Estrutura das Categorias
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+As categorias incluem, mas não se limitam a:
+- **Esportes:** Futebol, Basquete, Corrida, etc.
+- **Artes:** Desenho, Pintura, Teatro, etc.
+- **Bem-estar:** Yoga, Meditação, Pilates, etc.
+- **Tecnologia:** Modelagem 3D, Realidade Virtual, etc.
+- **Colecionismo:** Selos, Moedas, Modelismo, etc.
+
+Cada categoria apresenta informações detalhadas sobre:
+- O que é o hobby
+- História e fundamentos
+- Benefícios cognitivos e físicos
+- Materiais necessários
+- Custo inicial e ferramentas de comparação de preços
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Front-end:** Angular.
+- **Back-end:** Node.js e express.
+- **APIs:** Integração com APIs de mapas para localização de escolas e instrutores.
+- **Design:** Figma para prototipagem e layout.
+
+## 🔍 Pesquisa e Problemas Abordados
+
+Baseado em pesquisas realizadas, o ACHÔ busca solucionar problemas como:
+- **Falta de tempo para hobbies:** Uma barreira comum entre trabalhadores brasileiros.
+- **Excesso de produtividade:** A negligência de atividades que promovem lazer e criatividade.
+
+## 📝 Como Usar
+1. Clone este repositório:
+   ```bash
+2. Instale as dependências necessárias:
+   ```bash
+   npm install
+   ```
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   ng serve
+   ```
+4. Por fim, acesse a aplicação em [http://localhost:4200](http://localhost:4200).
+
+
+**Explore o mundo dos hobbies com o ACHÔ!** 
